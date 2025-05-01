@@ -88,6 +88,10 @@
 }, {
   "@id" : "https://purl.org/arlem-onto",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@language" : "en",
+    "@value" : "Luca Mandrelli"
+  } ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@language" : "en",
     "@value" : "Alex Gabriel"
@@ -103,6 +107,33 @@
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
     "@value" : "0.1"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#Model3D",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Abstract class to represent any 3D model resource (GLB, OBJ, etc.)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://purl.org/arlem-onto#primitive"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#ModelFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#PrimitiveType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Supported primitive types for VR and AR (cube, sphere, etc.)"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#Transform",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Standard 3D transform with position, rotation, and scale"
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#action",
@@ -144,6 +175,16 @@
     "@value" : "The activity contains a sequence of action steps, leading the user through the workflow needed to develop and demonstrate competence in the intended learning outcome."
   } ]
 }, {
+  "@id" : "https://purl.org/arlem-onto#animation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/arlem-onto#primitive"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "3D animation primitive for model overlays and sequences."
+  } ]
+}, {
   "@id" : "https://purl.org/arlem-onto#app",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -151,11 +192,58 @@
     "@value" : "Widget or app"
   } ]
 }, {
+  "@id" : "https://purl.org/arlem-onto#audio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/arlem-onto#primitive"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Audio primitive for sound output."
+  } ]
+}, {
   "@id" : "https://purl.org/arlem-onto#augmentationType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "augmentation type"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#color",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.org/arlem-onto#primitive"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#cone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/arlem-onto#PrimitiveType"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#cube",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/arlem-onto#PrimitiveType"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#custom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/arlem-onto#PrimitiveType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Custom mesh uploaded by client"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#cylinder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/arlem-onto#PrimitiveType"
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#deactivate",
@@ -193,11 +281,30 @@
     "@value" : "Container for augmentations which will be activated or deactivated, and which messages and validation rules will be executed, once the action step is exited"
   } ]
 }, {
+  "@id" : "https://purl.org/arlem-onto#fileFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "File format of the 3D model (e.g., glb, obj)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.org/arlem-onto#Model3D"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#glb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/arlem-onto#ModelFormat"
+  } ]
+}, {
   "@id" : "https://purl.org/arlem-onto#hasApps",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The apps container element holds definitions of how to interface the AR training system with other apps and widgets."
+    "@value" : "The apps container element holds definitions of how to interface the AR system with other apps."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://purl.org/arlem-onto#workplace"
@@ -207,7 +314,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Instruct the AR training system to play or display the augmentation with the target id provided (a predicate.id, primitive.id, or warning.id from the workplace model or an action.id from the activity model)."
+    "@value" : "Instruct the system to display or remove an augmentation by id."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid1"
@@ -238,10 +345,6 @@
 }, {
   "@id" : "https://purl.org/arlem-onto#hasDetectables",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Detectables are entities that link to fiducial markers, target feature models, or other sensor state properties providing input to the computer vision system."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://purl.org/arlem-onto#workplace"
   } ]
@@ -250,34 +353,12 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://purl.org/arlem-onto#action"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "Specify on which device to execute the action"
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#hasDevices",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Devices are the AR hardware delivery systems that the AR training system may communicate with to render the learning experience for the user."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://purl.org/arlem-onto#workplace"
-  } ]
-}, {
-  "@id" : "https://purl.org/arlem-onto#hasEnter",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Container for augmentations that will be activated or deactivated, and which messages and validation rules will be executed, once the action step is launched"
-  } ]
-}, {
-  "@id" : "https://purl.org/arlem-onto#hasExit",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Container for augmentations which will be activated or deactivated, and which messages and validation rules will be executed, once the action step is exited"
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#hasInstructionDescription",
@@ -305,16 +386,6 @@
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
     "@value" : "Specifies the language with which the activity expresses human-readable instructional prompts."
-  } ]
-}, {
-  "@id" : "https://purl.org/arlem-onto#hasLaunch",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Specify which action shall be launched on the recipient device \nThe AR training system shall publish launch ids to other devices or sensors on the MQTT topic target + “/” + id."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://purl.org/arlem-onto#message"
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#hasLocation",
@@ -457,6 +528,15 @@
     "@value" : "the headline of the instruction"
   } ]
 }, {
+  "@id" : "https://purl.org/arlem-onto#hasTransform",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.org/arlem-onto#primitive"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.org/arlem-onto#Transform"
+  } ]
+}, {
   "@id" : "https://purl.org/arlem-onto#hasTrigger",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -515,6 +595,16 @@
     "@value" : "Specify a rule for validating user behavior and other characteristics with defined queries to determine branching of the flow of action"
   } ]
 }, {
+  "@id" : "https://purl.org/arlem-onto#image",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/arlem-onto#primitive"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "2D image primitive for static overlays."
+  } ]
+}, {
   "@id" : "https://purl.org/arlem-onto#instruction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -522,11 +612,31 @@
     "@value" : "Human-readable directives and prompts for the learner for this particular action step"
   } ]
 }, {
+  "@id" : "https://purl.org/arlem-onto#label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/arlem-onto#primitive"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Label primitive for text annotations."
+  } ]
+}, {
   "@id" : "https://purl.org/arlem-onto#message",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
     "@value" : "Specify message statements to allow sending control commands and communication from device to device and user to user"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#obj",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/arlem-onto#ModelFormat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Specify which action shall be launched on the recipient device \nThe AR training system shall publish launch ids to other devices or sensors on the MQTT topic target + “/” + id."
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#person",
@@ -541,6 +651,61 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A specific location in the workplace."
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#point",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/arlem-onto#predicate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Predicate for pointing action using animation primitive."
+  } ],
+  "https://purl.org/arlem-onto#hasType" : [ {
+    "@id" : "https://purl.org/arlem-onto#animation"
+  } ],
+  "https://purl.org/arlem-onto#scale" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.0"
+  } ],
+  "https://purl.org/arlem-onto#url" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://example.com/point.fbx"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#positionX",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.org/arlem-onto#Transform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#positionY",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.org/arlem-onto#Transform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#positionZ",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.org/arlem-onto#Transform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#predicate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Reusable predicate defining an instructional augmentation."
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#predicateAugmentation",
@@ -571,6 +736,19 @@
     "@id" : "https://purl.org/arlem-onto#augmentationType"
   } ]
 }, {
+  "@id" : "https://purl.org/arlem-onto#primitiveType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Specifies the VR/AR primitive type of a primitive instance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.org/arlem-onto#primitive"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://purl.org/arlem-onto#PrimitiveType"
+  } ]
+}, {
   "@id" : "https://purl.org/arlem-onto#reactions",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -590,11 +768,105 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
+  "@id" : "https://purl.org/arlem-onto#rotate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/arlem-onto#predicate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Predicate for rotation action using animation primitive."
+  } ],
+  "https://purl.org/arlem-onto#hasType" : [ {
+    "@id" : "https://purl.org/arlem-onto#animation"
+  } ],
+  "https://purl.org/arlem-onto#scale" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.0"
+  } ],
+  "https://purl.org/arlem-onto#url" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://example.com/rotate.fbx"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#rotationX",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.org/arlem-onto#Transform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#rotationY",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.org/arlem-onto#Transform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#rotationZ",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.org/arlem-onto#Transform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#scale",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Scale factor for predicate animations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.org/arlem-onto#predicate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#scaleX",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.org/arlem-onto#Transform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#scaleY",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.org/arlem-onto#Transform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#scaleZ",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.org/arlem-onto#Transform"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
   "@id" : "https://purl.org/arlem-onto#sensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "For each sensor, the workplace model describes how to connect and what data streams to subscribe to."
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#sphere",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/arlem-onto#PrimitiveType"
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#startWith",
@@ -624,11 +896,47 @@
     "@value" : "The trigger is enabled after the statements on the enter stack have been evaluated, starting the execution of the stack of exit statements when released"
   } ]
 }, {
+  "@id" : "https://purl.org/arlem-onto#url",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "URL for loading external resources (3D models, images, videos, audio)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.org/arlem-onto#primitive"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#video",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://purl.org/arlem-onto#primitive"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Video primitive for dynamic visual content."
+  } ]
+}, {
   "@id" : "https://purl.org/arlem-onto#viewport",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The visual area in which any instruction contained in the action displayed"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#volume",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Audio volume level for audio primitives (0.0-1.0)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.org/arlem-onto#primitive"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#warning",
@@ -658,4 +966,43 @@
 }, {
   "@id" : "https://purl.org/arlem-onto#workplaceElement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#xSize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Width of the 3D primitive in meters (x dimension)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.org/arlem-onto#primitive"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#ySize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Height of the 3D primitive in meters (y dimension)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.org/arlem-onto#primitive"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#zSize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Depth of the 3D primitive in meters (z dimension)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.org/arlem-onto#primitive"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
 } ]
