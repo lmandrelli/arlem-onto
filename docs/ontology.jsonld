@@ -113,7 +113,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Abstract class to represent any 3D model resource (GLB, OBJ, etc.)."
+    "@value" : "Abstract class to represent any 3D model resource (GLB, OBJ,\n            etc.)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://purl.org/arlem-onto#primitive"
@@ -165,14 +165,14 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
-    "@value" : "Statement to execute effector output: load and display an augmentation to the user"
+    "@value" : "Statement to execute effector output: load and display an\n            augmentation to the user"
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#activity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
-    "@value" : "The activity contains a sequence of action steps, leading the user through the workflow needed to develop and demonstrate competence in the intended learning outcome."
+    "@value" : "The activity contains a sequence of action steps, leading\n            the user through the workflow needed to develop and demonstrate competence in the\n            intended learning outcome."
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#animation",
@@ -257,28 +257,28 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A detectable instructs the system how to recognize tangibles (things, places, or people)."
+    "@value" : "A detectable instructs the system how to recognize tangibles\n            (things, places, or people)."
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#device",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The hardware device that may be used to deliver activities or parts of activities created in this workplace."
+    "@value" : "The hardware device that may be used to deliver activities or\n            parts of activities created in this workplace."
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#enter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
-    "@value" : "Container for augmentations that will be activated or deactivated, and which messages and validation rules will be executed, once the action step is launched"
+    "@value" : "Container for augmentations that will be activated or\n            deactivated, and which messages and validation rules will be executed, once the action\n            step is launched"
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#exit",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
-    "@value" : "Container for augmentations which will be activated or deactivated, and which messages and validation rules will be executed, once the action step is exited"
+    "@value" : "Container for augmentations which will be activated or\n            deactivated, and which messages and validation rules will be executed, once the action\n            step is exited"
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#fileFormat",
@@ -304,7 +304,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The apps container element holds definitions of how to interface the AR system with other apps."
+    "@value" : "The apps container element holds definitions of how to interface\n            the AR training system with other apps and widgets."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://purl.org/arlem-onto#workplace"
@@ -314,7 +314,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Instruct the system to display or remove an augmentation by id."
+    "@value" : "Instruct the AR training system to play or display the\n            augmentation with the target id provided (a predicate.id, primitive.id, or warning.id\n            from the workplace model or an action.id from the activity model)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid1"
@@ -345,6 +345,10 @@
 }, {
   "@id" : "https://purl.org/arlem-onto#hasDetectables",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Detectables are entities that link to fiducial markers, target\n            feature models, or other sensor state properties providing input to the computer vision\n            system."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://purl.org/arlem-onto#workplace"
   } ]
@@ -353,12 +357,34 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://purl.org/arlem-onto#action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "Specify on which device to execute the action"
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#hasDevices",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Devices are the AR hardware delivery systems that the AR\n            training system may communicate with to render the learning experience for the user."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://purl.org/arlem-onto#workplace"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#hasEnter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Container for augmentations that will be activated or\n            deactivated, and which messages and validation rules will be executed, once the action\n            step is launched"
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#hasExit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Container for augmentations which will be activated or\n            deactivated, and which messages and validation rules will be executed, once the action\n            step is exited"
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#hasInstructionDescription",
@@ -372,7 +398,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Specify which variable key (MQTT “topic”) to use for broadcasting the message contents"
+    "@value" : "Specify which variable key (MQTT “topic”) to use for\n            broadcasting the message contents"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://purl.org/arlem-onto#message"
@@ -385,7 +411,17 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
-    "@value" : "Specifies the language with which the activity expresses human-readable instructional prompts."
+    "@value" : "Specifies the language with which the activity expresses\n            human-readable instructional prompts."
+  } ]
+}, {
+  "@id" : "https://purl.org/arlem-onto#hasLaunch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Specify which action shall be launched on the recipient device\n            The AR training system shall publish launch ids to other devices or sensors on the MQTT\n            topic target + “/” + id."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://purl.org/arlem-onto#message"
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#hasLocation",
@@ -412,7 +448,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The id of a detectable that marks the world origin for the work place\nAll positions of all other detectables of type “anchor” shall be expressed relative to this world origin, so that this single detectable may be used to sync x-, y-, and z-coordinate offsets across devices and platforms."
+    "@value" : "The id of a detectable that marks the world origin for the work\n            place\n            All positions of all other detectables of type “anchor” shall be expressed relative to\n            this world origin, so that this single detectable may be used to sync x-, y-, and\n            z-coordinate offsets across devices and platforms."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://purl.org/arlem-onto#workplace"
@@ -422,7 +458,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Persons refer to the people in the workplace with whom the user may interact"
+    "@value" : "Persons refer to the people in the workplace with whom the user\n            may interact"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://purl.org/arlem-onto#workplace"
@@ -432,7 +468,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Places are tangibles. They refer to locations within the workplace."
+    "@value" : "Places are tangibles. They refer to locations within the\n            workplace."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://purl.org/arlem-onto#workplace"
@@ -442,7 +478,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Specify the point of interest (poi) from where to remove the augmentation"
+    "@value" : "Specify the point of interest (poi) from where to remove the\n            augmentation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid4"
@@ -452,7 +488,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The action may specify what verb to log user interaction with via the xAPI.\nWhen no predicate is provided, logging shall use the standard xAPI verb “launched” for each action step.\nIf xAPI is supported by the AR training system, then any predicate id used shall correspond to the id of the resultant xAPI verb statement definition."
+    "@value" : "The action may specify what verb to log user interaction with\n            via the xAPI.\n            When no predicate is provided, logging shall use the standard xAPI verb “launched” for\n            each action step.\n            If xAPI is supported by the AR training system, then any predicate id used shall\n            correspond to the id of the resultant xAPI verb statement definition."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://purl.org/arlem-onto#action"
@@ -462,7 +498,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Predicates are reusable instructional augmentations, configuring a specific augmentation primitive for its use in activities."
+    "@value" : "Predicates are reusable instructional augmentations, configuring\n            a specific augmentation primitive for its use in activities."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://purl.org/arlem-onto#workplace"
@@ -472,7 +508,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Augmentation primitives define the fundamental types of annotations available in the AR training system\nNOTE—The workplace model informs the AR training system, which of the primitives are supported in this workplace. Moreover, for each augmentation primitive, the workplace model defines default size and/or volume level."
+    "@value" : "Augmentation primitives define the fundamental types of\n            annotations available in the AR training system\n            NOTE—The workplace model informs the AR training system, which of the primitives are\n            supported in this workplace. Moreover, for each augmentation primitive, the workplace\n            model defines default size and/or volume level."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://purl.org/arlem-onto#workplace"
@@ -482,7 +518,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Sensors are hardware devices that detect or measure physical characteristics and communicates the data generated digitally."
+    "@value" : "Sensors are hardware devices that detect or measure physical\n            characteristics and communicates the data generated digitally."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://purl.org/arlem-onto#workplace"
@@ -492,7 +528,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Reference to unique identifier of a tangible in the workplace model."
+    "@value" : "Reference to unique identifier of a tangible in the workplace\n            model."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid7"
@@ -502,7 +538,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The message content as human readable text is included as the text node of message element"
+    "@value" : "The message content as human readable text is included as the\n            text node of message element"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://purl.org/arlem-onto#message"
@@ -512,7 +548,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The container object holds an array of definitions of the physical workplace objects such as tools, machines, furniture, or materials"
+    "@value" : "The container object holds an array of definitions of the\n            physical workplace objects such as tools, machines, furniture, or materials"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://purl.org/arlem-onto#workplace"
@@ -550,7 +586,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
-    "@value" : "Specifies the category of the action and is used for styling visual appearance"
+    "@value" : "Specifies the category of the action and is used for styling\n            visual appearance"
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#hasUID",
@@ -566,7 +602,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
-    "@value" : "The visual area in which any instruction contained in the action displayed."
+    "@value" : "The visual area in which any instruction contained in the\n            action displayed."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://purl.org/arlem-onto#viewport"
@@ -576,7 +612,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Definition of the supported warnings and instructions\nNOTE—The AR system shall support all warnings listed in ISO 7010."
+    "@value" : "Definition of the supported warnings and instructions\n            NOTE—The AR system shall support all warnings listed in ISO 7010."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://purl.org/arlem-onto#workplace"
@@ -592,7 +628,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Specify a rule for validating user behavior and other characteristics with defined queries to determine branching of the flow of action"
+    "@value" : "Specify a rule for validating user behavior and other\n            characteristics with defined queries to determine branching of the flow of action"
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#image",
@@ -609,7 +645,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Human-readable directives and prompts for the learner for this particular action step"
+    "@value" : "Human-readable directives and prompts for the learner for this\n            particular action step"
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#label",
@@ -626,7 +662,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
-    "@value" : "Specify message statements to allow sending control commands and communication from device to device and user to user"
+    "@value" : "Specify message statements to allow sending control commands\n            and communication from device to device and user to user"
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#obj",
@@ -636,7 +672,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Specify which action shall be launched on the recipient device \nThe AR training system shall publish launch ids to other devices or sensors on the MQTT topic target + “/” + id."
+    "@value" : "Specify which action shall be launched on the recipient device\n            The AR training system shall publish launch ids to other devices or sensors on the MQTT\n            topic target + “/” + id."
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#person",
@@ -671,7 +707,7 @@
   } ],
   "https://purl.org/arlem-onto#url" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
-    "@value" : "http://example.com/point.fbx"
+    "@value" : "\n            http://example.com/point.fbx"
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#positionX",
@@ -762,7 +798,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@language" : "en",
-    "@value" : "If set to true, the action triggers the immediate execution of the exit loop once activate, deactivate, message, and if statements contained in this enter loop have been rendered. If not provided, default is assumed to be false"
+    "@value" : "If set to true, the action triggers the immediate execution\n            of the exit loop once activate, deactivate, message, and if statements contained in this\n            enter loop have been rendered. If not provided, default is assumed to be false"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -786,7 +822,7 @@
   } ],
   "https://purl.org/arlem-onto#url" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
-    "@value" : "http://example.com/rotate.fbx"
+    "@value" : "\n            http://example.com/rotate.fbx"
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#rotationX",
@@ -860,7 +896,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "For each sensor, the workplace model describes how to connect and what data streams to subscribe to."
+    "@value" : "For each sensor, the workplace model describes how to connect\n            and what data streams to subscribe to."
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#sphere",
@@ -886,21 +922,21 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The container element holds the definition of a single physical workplace object."
+    "@value" : "The container element holds the definition of a single physical\n            workplace object."
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#trigger",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The trigger is enabled after the statements on the enter stack have been evaluated, starting the execution of the stack of exit statements when released"
+    "@value" : "The trigger is enabled after the statements on the enter stack\n            have been evaluated, starting the execution of the stack of exit statements when\n            released"
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#url",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "URL for loading external resources (3D models, images, videos, audio)."
+    "@value" : "URL for loading external resources (3D models, images, videos,\n            audio)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://purl.org/arlem-onto#primitive"
@@ -923,7 +959,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The visual area in which any instruction contained in the action displayed"
+    "@value" : "The visual area in which any instruction contained in the action\n            displayed"
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#volume",
@@ -961,7 +997,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The workplace element contains all information about a physical environment in which users learn by performing tasks with real and virtual objects."
+    "@value" : "The workplace element contains all information about a physical\n            environment in which users learn by performing tasks with real and virtual objects."
   } ]
 }, {
   "@id" : "https://purl.org/arlem-onto#workplaceElement",

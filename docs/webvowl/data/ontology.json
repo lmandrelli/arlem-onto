@@ -47,61 +47,58 @@
     "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "5",
+    "id" : "13",
     "type" : "owl:Class"
   }, {
-    "id" : "21",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "22",
+    "id" : "23",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "28",
+    "id" : "6",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "29",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "18",
+    "id" : "20",
     "type" : "owl:Thing"
   }, {
     "id" : "2",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "32",
-    "type" : "rdfs:Datatype"
-  }, {
     "id" : "33",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "25",
+    "id" : "34",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "36",
+    "id" : "26",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "37",
-    "type" : "owl:Class"
-  }, {
-    "id" : "40",
-    "type" : "owl:Class"
-  }, {
-    "id" : "31",
-    "type" : "owl:Class"
-  }, {
-    "id" : "24",
-    "type" : "owl:Class"
-  }, {
-    "id" : "42",
     "type" : "rdfs:Datatype"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
   }, {
     "id" : "43",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "44",
-    "type" : "owl:Class"
-  }, {
-    "id" : "45",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "47",
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "48",
@@ -111,10 +108,10 @@
     "type" : "rdfs:Datatype"
   }, {
     "id" : "50",
-    "type" : "owl:Class"
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "51",
-    "type" : "rdfs:Datatype"
+    "type" : "owl:Class"
   }, {
     "id" : "52",
     "type" : "rdfs:Datatype"
@@ -123,141 +120,147 @@
     "type" : "rdfs:Datatype"
   }, {
     "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "55",
     "type" : "owl:unionOf"
   }, {
-    "id" : "68",
-    "type" : "owl:Class"
-  }, {
-    "id" : "73",
+    "id" : "69",
     "type" : "owl:Class"
   }, {
     "id" : "74",
     "type" : "owl:Class"
   }, {
-    "id" : "27",
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
     "type" : "owl:Class"
   }, {
     "id" : "76",
-    "type" : "owl:Class"
+    "type" : "rdfs:Literal"
   }, {
     "id" : "77",
-    "type" : "rdfs:Literal"
+    "type" : "owl:Class"
   }, {
-    "id" : "79",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "72",
+    "id" : "78",
     "type" : "owl:Thing"
   }, {
     "id" : "81",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "35",
-    "type" : "owl:Class"
-  }, {
-    "id" : "82",
+    "id" : "73",
     "type" : "owl:Thing"
   }, {
-    "id" : "86",
+    "id" : "83",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "36",
     "type" : "owl:Class"
   }, {
-    "id" : "64",
-    "type" : "rdfs:Literal"
+    "id" : "84",
+    "type" : "owl:Thing"
   }, {
     "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "56",
+    "id" : "91",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "57",
     "type" : "owl:Class"
-  }, {
-    "id" : "94",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "30",
-    "type" : "owl:Class"
-  }, {
-    "id" : "95",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "14",
-    "type" : "owl:Thing"
   }, {
     "id" : "96",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "20",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "11",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "97",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "16",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "8",
     "type" : "owl:Thing"
   }, {
-    "id" : "41",
+    "id" : "31",
     "type" : "owl:Class"
   }, {
-    "id" : "85",
+    "id" : "98",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "16",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "12",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "42",
     "type" : "owl:Class"
   }, {
-    "id" : "105",
+    "id" : "87",
     "type" : "owl:Class"
   }, {
-    "id" : "110",
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "113",
     "type" : "owl:Class"
   }, {
     "id" : "1",
     "type" : "owl:Class"
   }, {
+    "id" : "119",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:unionOf"
+  }, {
     "id" : "116",
-    "type" : "owl:Class"
-  }, {
-    "id" : "55",
-    "type" : "owl:Class"
-  }, {
-    "id" : "7",
     "type" : "owl:unionOf"
   }, {
-    "id" : "113",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "115",
+    "id" : "118",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "10",
+    "id" : "8",
     "type" : "owl:Class"
   }, {
-    "id" : "109",
+    "id" : "112",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "101",
+    "id" : "104",
     "type" : "owl:unionOf"
   }, {
-    "id" : "117",
+    "id" : "120",
     "type" : "owl:unionOf"
   }, {
-    "id" : "66",
+    "id" : "67",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "61",
+    "id" : "62",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "71",
+    "id" : "72",
     "type" : "owl:unionOf"
   }, {
-    "id" : "13",
+    "id" : "15",
     "type" : "owl:unionOf"
-  }, {
-    "id" : "121",
-    "type" : "owl:Class"
   }, {
     "id" : "124",
+    "type" : "owl:Class"
+  }, {
+    "id" : "128",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -294,7 +297,7 @@
       }
     } ],
     "comment" : {
-      "en" : "The visual area in which any instruction contained in the action displayed"
+      "en" : "The visual area in which any instruction contained in the action\n            displayed"
     },
     "id" : "4"
   }, {
@@ -314,38 +317,38 @@
       "iri" : "https://purl.org/arlem-onto#obj",
       "baseIri" : "https://purl.org/arlem-onto",
       "comment" : {
-        "en" : "Specify which action shall be launched on the recipient device \nThe AR training system shall publish launch ids to other devices or sensors on the MQTT topic target + “/” + id."
+        "en" : "Specify which action shall be launched on the recipient device\n            The AR training system shall publish launch ids to other devices or sensors on the MQTT\n            topic target + “/” + id."
       },
       "labels" : {
         "IRI-based" : "obj"
       }
     } ],
-    "id" : "5"
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "21",
-    "label" : {
-      "undefined" : "Thing"
-    }
+    "id" : "13"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "22",
+    "id" : "23",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "6",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "28",
+    "id" : "29",
     "label" : {
       "IRI-based" : "decimal"
     }
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "18",
+    "id" : "20",
     "label" : {
       "undefined" : "Thing"
     }
@@ -359,28 +362,28 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "32",
+    "id" : "33",
     "label" : {
       "IRI-based" : "decimal"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "33",
+    "id" : "34",
     "label" : {
       "IRI-based" : "anyURI"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "25",
+    "id" : "26",
     "label" : {
       "IRI-based" : "decimal"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "36",
+    "id" : "37",
     "label" : {
       "IRI-based" : "decimal"
     }
@@ -392,9 +395,9 @@
       "IRI-based" : "detectable"
     },
     "comment" : {
-      "en" : "A detectable instructs the system how to recognize tangibles (things, places, or people)."
+      "en" : "A detectable instructs the system how to recognize tangibles\n            (things, places, or people)."
     },
-    "id" : "37"
+    "id" : "38"
   }, {
     "iri" : "https://purl.org/arlem-onto#deactivate",
     "baseIri" : "https://purl.org/arlem-onto",
@@ -405,7 +408,7 @@
     "comment" : {
       "en" : "Statement to remove augmentations"
     },
-    "id" : "40"
+    "id" : "41"
   }, {
     "iri" : "https://purl.org/arlem-onto#augmentationType",
     "baseIri" : "https://purl.org/arlem-onto",
@@ -441,7 +444,7 @@
     "comment" : {
       "en" : "augmentation type"
     },
-    "id" : "31"
+    "id" : "32"
   }, {
     "iri" : "https://purl.org/arlem-onto#primitive",
     "baseIri" : "https://purl.org/arlem-onto",
@@ -495,22 +498,22 @@
         "IRI-based" : "image"
       }
     } ],
-    "subClasses" : [ "41" ],
+    "subClasses" : [ "42" ],
     "comment" : {
       "en" : "Definition of a particular type of augmentation"
     },
-    "id" : "24"
+    "id" : "25"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "42",
+    "id" : "43",
     "label" : {
       "IRI-based" : "decimal"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "43",
+    "id" : "44",
     "label" : {
       "IRI-based" : "decimal"
     }
@@ -524,18 +527,11 @@
     "comment" : {
       "en" : "Standard 3D transform with position, rotation, and scale"
     },
-    "id" : "44"
+    "id" : "45"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "45",
-    "label" : {
-      "IRI-based" : "decimal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "47",
+    "id" : "46",
     "label" : {
       "IRI-based" : "decimal"
     }
@@ -554,6 +550,13 @@
       "IRI-based" : "decimal"
     }
   }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
     "iri" : "https://purl.org/arlem-onto#thing",
     "baseIri" : "https://purl.org/arlem-onto",
     "instances" : 0,
@@ -561,16 +564,9 @@
       "IRI-based" : "thing"
     },
     "comment" : {
-      "en" : "The container element holds the definition of a single physical workplace object."
+      "en" : "The container element holds the definition of a single physical\n            workplace object."
     },
-    "id" : "50"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "51",
-    "label" : {
-      "IRI-based" : "decimal"
-    }
+    "id" : "51"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -579,17 +575,24 @@
       "IRI-based" : "decimal"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "53",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "54",
     "label" : {
       "IRI-based" : "boolean"
     }
   }, {
     "instances" : 0,
-    "union" : [ "55", "56" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "54"
+    "union" : [ "56", "57" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "55"
   }, {
     "iri" : "https://purl.org/arlem-onto#predicate",
     "baseIri" : "https://purl.org/arlem-onto",
@@ -619,7 +622,7 @@
     "comment" : {
       "en" : "Reusable predicate defining an instructional augmentation."
     },
-    "id" : "68"
+    "id" : "69"
   }, {
     "iri" : "https://purl.org/arlem-onto#app",
     "baseIri" : "https://purl.org/arlem-onto",
@@ -630,7 +633,7 @@
     "comment" : {
       "en" : "Widget or app"
     },
-    "id" : "73"
+    "id" : "74"
   }, {
     "iri" : "https://purl.org/arlem-onto#if",
     "baseIri" : "https://purl.org/arlem-onto",
@@ -639,9 +642,9 @@
       "IRI-based" : "if"
     },
     "comment" : {
-      "en" : "Specify a rule for validating user behavior and other characteristics with defined queries to determine branching of the flow of action"
+      "en" : "Specify a rule for validating user behavior and other\n            characteristics with defined queries to determine branching of the flow of action"
     },
-    "id" : "74"
+    "id" : "75"
   }, {
     "iri" : "https://purl.org/arlem-onto#workplaceElement",
     "baseIri" : "https://purl.org/arlem-onto",
@@ -668,7 +671,14 @@
         "IRI-based" : "predicateType"
       }
     } ],
-    "id" : "27"
+    "id" : "28"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "76",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
   }, {
     "iri" : "https://purl.org/arlem-onto#place",
     "baseIri" : "https://purl.org/arlem-onto",
@@ -679,17 +689,17 @@
     "comment" : {
       "en" : "A specific location in the workplace."
     },
-    "id" : "76"
+    "id" : "77"
   }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "77",
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "78",
     "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
+      "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "79",
+    "id" : "81",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -697,13 +707,13 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "72",
+    "id" : "73",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "81",
+    "id" : "83",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -723,11 +733,11 @@
     "label" : {
       "IRI-based" : "action"
     },
-    "id" : "35"
+    "id" : "36"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "82",
+    "id" : "84",
     "label" : {
       "undefined" : "Thing"
     }
@@ -741,17 +751,17 @@
     "comment" : {
       "en" : "A particular individual"
     },
-    "id" : "86"
+    "id" : "89"
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "64",
+    "id" : "65",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "89",
+    "id" : "91",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -764,18 +774,18 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "en",
-        "value" : "Container for augmentations which will be activated or deactivated, and which messages and validation rules will be executed, once the action step is exited",
+        "value" : "Container for augmentations which will be activated or\n            deactivated, and which messages and validation rules will be executed, once the action\n            step is exited",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "exit"
     },
-    "id" : "56"
+    "id" : "57"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "94",
+    "id" : "96",
     "label" : {
       "undefined" : "Thing"
     }
@@ -787,67 +797,67 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "en",
-        "value" : "Statement to execute effector output: load and display an augmentation to the user",
+        "value" : "Statement to execute effector output: load and display an\n            augmentation to the user",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "activate"
     },
-    "id" : "30"
+    "id" : "31"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "95",
+    "id" : "98",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "14",
-    "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "96",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "20",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "11",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "97",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "id" : "16",
     "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "99",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "100",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "18",
+    "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "8",
+    "id" : "12",
     "label" : {
       "undefined" : "Thing"
     }
@@ -859,10 +869,10 @@
       "IRI-based" : "Model3D"
     },
     "comment" : {
-      "en" : "Abstract class to represent any 3D model resource (GLB, OBJ, etc.)."
+      "en" : "Abstract class to represent any 3D model resource (GLB, OBJ,\n            etc.)."
     },
-    "id" : "41",
-    "superClasses" : [ "24" ]
+    "id" : "42",
+    "superClasses" : [ "25" ]
   }, {
     "iri" : "https://purl.org/arlem-onto#activity",
     "baseIri" : "https://purl.org/arlem-onto",
@@ -871,14 +881,14 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "en",
-        "value" : "The activity contains a sequence of action steps, leading the user through the workflow needed to develop and demonstrate competence in the intended learning outcome.",
+        "value" : "The activity contains a sequence of action steps, leading\n            the user through the workflow needed to develop and demonstrate competence in the\n            intended learning outcome.",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "activity"
     },
-    "id" : "85"
+    "id" : "87"
   }, {
     "iri" : "https://purl.org/arlem-onto#PrimitiveType",
     "baseIri" : "https://purl.org/arlem-onto",
@@ -923,7 +933,7 @@
     "comment" : {
       "en" : "Supported primitive types for VR and AR (cube, sphere, etc.)"
     },
-    "id" : "105"
+    "id" : "108"
   }, {
     "iri" : "https://purl.org/arlem-onto#trigger",
     "baseIri" : "https://purl.org/arlem-onto",
@@ -932,9 +942,9 @@
       "IRI-based" : "trigger"
     },
     "comment" : {
-      "en" : "The trigger is enabled after the statements on the enter stack have been evaluated, starting the execution of the stack of exit statements when released"
+      "en" : "The trigger is enabled after the statements on the enter stack\n            have been evaluated, starting the execution of the stack of exit statements when\n            released"
     },
-    "id" : "110"
+    "id" : "113"
   }, {
     "iri" : "https://purl.org/arlem-onto#workplace",
     "baseIri" : "https://purl.org/arlem-onto",
@@ -943,7 +953,7 @@
       "IRI-based" : "workplace"
     },
     "comment" : {
-      "en" : "The workplace element contains all information about a physical environment in which users learn by performing tasks with real and virtual objects."
+      "en" : "The workplace element contains all information about a physical\n            environment in which users learn by performing tasks with real and virtual objects."
     },
     "id" : "1"
   }, {
@@ -954,9 +964,9 @@
       "IRI-based" : "instruction"
     },
     "comment" : {
-      "en" : "Human-readable directives and prompts for the learner for this particular action step"
+      "en" : "Human-readable directives and prompts for the learner for this\n            particular action step"
     },
-    "id" : "116"
+    "id" : "119"
   }, {
     "iri" : "https://purl.org/arlem-onto#enter",
     "baseIri" : "https://purl.org/arlem-onto",
@@ -965,28 +975,28 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "en",
-        "value" : "Container for augmentations that will be activated or deactivated, and which messages and validation rules will be executed, once the action step is launched",
+        "value" : "Container for augmentations that will be activated or\n            deactivated, and which messages and validation rules will be executed, once the action\n            step is launched",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "enter"
     },
-    "id" : "55"
+    "id" : "56"
   }, {
     "instances" : 0,
-    "union" : [ "30", "40" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "7"
+    "union" : [ "31", "41" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "11"
   }, {
     "instances" : 0,
-    "union" : [ "30", "40", "35" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "113"
+    "union" : [ "31", "41", "36" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "116"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "115",
+    "id" : "118",
     "label" : {
       "IRI-based" : "string"
     }
@@ -998,55 +1008,55 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "en",
-        "value" : "Specify message statements to allow sending control commands and communication from device to device and user to user",
+        "value" : "Specify message statements to allow sending control commands\n            and communication from device to device and user to user",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "message"
     },
-    "id" : "10"
+    "id" : "8"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "109",
+    "id" : "112",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "instances" : 0,
-    "union" : [ "85", "116" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "101"
+    "union" : [ "87", "119" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "104"
   }, {
     "instances" : 0,
-    "union" : [ "85", "1" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "117"
+    "union" : [ "87", "1" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "120"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "66",
+    "id" : "67",
     "label" : {
       "IRI-based" : "decimal"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "61",
+    "id" : "62",
     "label" : {
       "IRI-based" : "decimal"
     }
   }, {
     "instances" : 0,
-    "union" : [ "30", "40" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "71"
+    "union" : [ "31", "41" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "72"
   }, {
     "instances" : 0,
-    "union" : [ "30", "40" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "13"
+    "union" : [ "31", "41" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "15"
   }, {
     "iri" : "https://purl.org/arlem-onto#sensor",
     "baseIri" : "https://purl.org/arlem-onto",
@@ -1055,9 +1065,9 @@
       "IRI-based" : "sensor"
     },
     "comment" : {
-      "en" : "For each sensor, the workplace model describes how to connect and what data streams to subscribe to."
+      "en" : "For each sensor, the workplace model describes how to connect\n            and what data streams to subscribe to."
     },
-    "id" : "121"
+    "id" : "124"
   }, {
     "iri" : "https://purl.org/arlem-onto#device",
     "baseIri" : "https://purl.org/arlem-onto",
@@ -1066,168 +1076,177 @@
       "IRI-based" : "device"
     },
     "comment" : {
-      "en" : "The hardware device that may be used to deliver activities or parts of activities created in this workplace."
+      "en" : "The hardware device that may be used to deliver activities or\n            parts of activities created in this workplace."
     },
-    "id" : "124"
+    "id" : "128"
   } ],
   "property" : [ {
     "id" : "0",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "6",
+    "id" : "5",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "9",
+    "id" : "7",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "12",
+    "id" : "10",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "15",
-    "type" : "owl:datatypeProperty"
+    "id" : "14",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "17",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "23",
+    "id" : "24",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "26",
+    "id" : "27",
     "type" : "rdf:Property"
   }, {
-    "id" : "29",
+    "id" : "30",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "34",
+    "id" : "35",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "38",
-    "type" : "owl:datatypeProperty"
   }, {
     "id" : "39",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "46",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "57",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "58",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "59",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "60",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "62",
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "63",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "65",
+    "id" : "64",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "67",
-    "type" : "owl:objectProperty"
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "69",
+    "id" : "68",
     "type" : "owl:objectProperty"
   }, {
     "id" : "70",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "75",
-    "type" : "rdfs:SubClassOf"
+    "id" : "71",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "78",
+    "id" : "79",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "83",
+    "id" : "85",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "84",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "87",
+    "id" : "86",
     "type" : "owl:objectProperty"
   }, {
     "id" : "88",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "90",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "91",
+    "id" : "90",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "92",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "93",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "98",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "99",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "100",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "102",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "103",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "104",
-    "type" : "owl:objectProperty"
+    "id" : "105",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "106",
     "type" : "owl:objectProperty"
   }, {
     "id" : "107",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "108",
+    "id" : "109",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "110",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "111",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "112",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "114",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "118",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "119",
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "117",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "120",
+    "id" : "121",
     "type" : "owl:objectProperty"
   }, {
     "id" : "122",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "123",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "125",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "127",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "129",
     "type" : "owl:datatypeProperty"
   } ],
   "propertyAttribute" : [ {
@@ -1241,48 +1260,61 @@
     "attributes" : [ "datatype" ],
     "id" : "0"
   }, {
-    "iri" : "https://purl.org/arlem-onto#hasTarget",
+    "iri" : "https://purl.org/arlem-onto#hasExit",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "8",
+    "range" : "6",
     "label" : {
-      "IRI-based" : "hasTarget"
+      "IRI-based" : "hasExit"
     },
-    "domain" : "7",
+    "domain" : "6",
     "comment" : {
-      "en" : "Reference to unique identifier of a tangible in the workplace model."
+      "en" : "Container for augmentations which will be activated or\n            deactivated, and which messages and validation rules will be executed, once the action\n            step is exited"
     },
     "attributes" : [ "object" ],
-    "id" : "6"
+    "id" : "5"
   }, {
     "iri" : "https://purl.org/arlem-onto#hasText",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "11",
+    "range" : "9",
     "label" : {
       "IRI-based" : "hasText"
     },
-    "domain" : "10",
+    "domain" : "8",
     "comment" : {
-      "en" : "The message content as human readable text is included as the text node of message element"
+      "en" : "The message content as human readable text is included as the\n            text node of message element"
     },
     "attributes" : [ "datatype" ],
-    "id" : "9"
+    "id" : "7"
+  }, {
+    "iri" : "https://purl.org/arlem-onto#hasTarget",
+    "baseIri" : "https://purl.org/arlem-onto",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasTarget"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "Reference to unique identifier of a tangible in the workplace\n            model."
+    },
+    "attributes" : [ "object" ],
+    "id" : "10"
   }, {
     "iri" : "https://purl.org/arlem-onto#hasPoi",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "14",
+    "range" : "16",
     "label" : {
       "IRI-based" : "hasPoi"
     },
-    "domain" : "13",
+    "domain" : "15",
     "comment" : {
-      "en" : "Specify the point of interest (poi) from where to remove the augmentation"
+      "en" : "Specify the point of interest (poi) from where to remove the\n            augmentation"
     },
     "attributes" : [ "object" ],
-    "id" : "12"
+    "id" : "14"
   }, {
     "iri" : "https://purl.org/arlem-onto#hasInstructionDescription",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "16",
+    "range" : "18",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1294,52 +1326,52 @@
     "label" : {
       "IRI-based" : "hasInstructionDescription"
     },
-    "domain" : "3",
+    "domain" : "6",
     "attributes" : [ "datatype" ],
-    "id" : "15"
+    "id" : "17"
   }, {
     "iri" : "https://purl.org/arlem-onto#hasPlaces",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "18",
+    "range" : "20",
     "label" : {
       "IRI-based" : "hasPlaces"
     },
     "domain" : "1",
     "comment" : {
-      "en" : "Places are tangibles. They refer to locations within the workplace."
+      "en" : "Places are tangibles. They refer to locations within the\n            workplace."
     },
     "attributes" : [ "object" ],
-    "id" : "17"
+    "id" : "19"
   }, {
     "iri" : "https://purl.org/arlem-onto#hasKey",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "20",
+    "range" : "22",
     "label" : {
       "IRI-based" : "hasKey"
     },
-    "domain" : "10",
+    "domain" : "8",
     "comment" : {
-      "en" : "Specify which variable key (MQTT “topic”) to use for broadcasting the message contents"
+      "en" : "Specify which variable key (MQTT “topic”) to use for\n            broadcasting the message contents"
     },
     "attributes" : [ "datatype" ],
-    "id" : "19"
+    "id" : "21"
   }, {
     "iri" : "https://purl.org/arlem-onto#ySize",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "25",
+    "range" : "26",
     "label" : {
       "IRI-based" : "ySize"
     },
-    "domain" : "24",
+    "domain" : "25",
     "comment" : {
       "en" : "Height of the 3D primitive in meters (y dimension)."
     },
     "attributes" : [ "datatype" ],
-    "id" : "23"
+    "id" : "24"
   }, {
-    "domain" : "27",
-    "range" : "24",
-    "id" : "26",
+    "domain" : "28",
+    "range" : "25",
+    "id" : "27",
     "label" : {
       "IRI-based" : "25",
       "undefined" : "is a"
@@ -1347,7 +1379,7 @@
   }, {
     "iri" : "https://purl.org/arlem-onto#hasAugmentationType",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "31",
+    "range" : "32",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1359,225 +1391,233 @@
     "label" : {
       "IRI-based" : "hasAugmentationType"
     },
-    "domain" : "30",
+    "domain" : "31",
     "attributes" : [ "object" ],
-    "id" : "29"
+    "id" : "30"
   }, {
     "iri" : "https://purl.org/arlem-onto#hasPredicate",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "21",
+    "range" : "3",
     "label" : {
       "IRI-based" : "hasPredicate"
     },
-    "domain" : "35",
+    "domain" : "36",
     "comment" : {
-      "en" : "The action may specify what verb to log user interaction with via the xAPI.\nWhen no predicate is provided, logging shall use the standard xAPI verb “launched” for each action step.\nIf xAPI is supported by the AR training system, then any predicate id used shall correspond to the id of the resultant xAPI verb statement definition."
+      "en" : "The action may specify what verb to log user interaction with\n            via the xAPI.\n            When no predicate is provided, logging shall use the standard xAPI verb “launched” for\n            each action step.\n            If xAPI is supported by the AR training system, then any predicate id used shall\n            correspond to the id of the resultant xAPI verb statement definition."
     },
     "attributes" : [ "object" ],
-    "id" : "34"
+    "id" : "35"
   }, {
     "iri" : "https://purl.org/arlem-onto#url",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "33",
+    "range" : "34",
     "label" : {
       "IRI-based" : "url"
     },
-    "domain" : "24",
+    "domain" : "25",
     "comment" : {
-      "en" : "URL for loading external resources (3D models, images, videos, audio)."
+      "en" : "URL for loading external resources (3D models, images, videos,\n            audio)."
     },
     "attributes" : [ "datatype" ],
-    "id" : "38"
+    "id" : "39"
   }, {
     "iri" : "https://purl.org/arlem-onto#hasDevice",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "21",
-    "label" : {
-      "IRI-based" : "hasDevice"
-    },
-    "domain" : "35",
-    "attributes" : [ "object" ],
-    "id" : "39"
-  }, {
-    "iri" : "https://purl.org/arlem-onto#hasType",
-    "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "21",
+    "range" : "3",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "en",
-        "value" : "Specifies the category of the action and is used for styling visual appearance",
+        "value" : "Specify on which device to execute the action",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDevice"
+    },
+    "domain" : "36",
+    "attributes" : [ "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://purl.org/arlem-onto#hasType",
+    "baseIri" : "https://purl.org/arlem-onto",
+    "range" : "3",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "en",
+        "value" : "Specifies the category of the action and is used for styling\n            visual appearance",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "hasType"
     },
-    "domain" : "35",
+    "domain" : "36",
     "attributes" : [ "object" ],
-    "id" : "46"
+    "id" : "47"
   }, {
     "iri" : "https://purl.org/arlem-onto#rotationX",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "48",
+    "range" : "49",
     "label" : {
       "IRI-based" : "rotationX"
     },
-    "domain" : "44",
-    "attributes" : [ "datatype" ],
-    "id" : "57"
-  }, {
-    "iri" : "https://purl.org/arlem-onto#rotationY",
-    "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "47",
-    "label" : {
-      "IRI-based" : "rotationY"
-    },
-    "domain" : "44",
+    "domain" : "45",
     "attributes" : [ "datatype" ],
     "id" : "58"
   }, {
+    "iri" : "https://purl.org/arlem-onto#rotationY",
+    "baseIri" : "https://purl.org/arlem-onto",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "rotationY"
+    },
+    "domain" : "45",
+    "attributes" : [ "datatype" ],
+    "id" : "59"
+  }, {
     "iri" : "https://purl.org/arlem-onto#hasPersons",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "18",
+    "range" : "20",
     "label" : {
       "IRI-based" : "hasPersons"
     },
     "domain" : "1",
     "comment" : {
-      "en" : "Persons refer to the people in the workplace with whom the user may interact"
+      "en" : "Persons refer to the people in the workplace with whom the user\n            may interact"
     },
     "attributes" : [ "object" ],
-    "id" : "59"
+    "id" : "60"
   }, {
     "iri" : "https://purl.org/arlem-onto#positionY",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "61",
+    "range" : "62",
     "label" : {
       "IRI-based" : "positionY"
     },
-    "domain" : "44",
+    "domain" : "45",
     "attributes" : [ "datatype" ],
-    "id" : "60"
+    "id" : "61"
   }, {
     "iri" : "https://purl.org/arlem-onto#positionZ",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "52",
+    "range" : "53",
     "label" : {
       "IRI-based" : "positionZ"
     },
-    "domain" : "44",
+    "domain" : "45",
     "attributes" : [ "datatype" ],
-    "id" : "62"
+    "id" : "63"
   }, {
     "iri" : "https://purl.org/arlem-onto#hasOrigin",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "64",
+    "range" : "65",
     "label" : {
       "IRI-based" : "hasOrigin"
     },
     "domain" : "1",
     "comment" : {
-      "en" : "The id of a detectable that marks the world origin for the work place\nAll positions of all other detectables of type “anchor” shall be expressed relative to this world origin, so that this single detectable may be used to sync x-, y-, and z-coordinate offsets across devices and platforms."
+      "en" : "The id of a detectable that marks the world origin for the work\n            place\n            All positions of all other detectables of type “anchor” shall be expressed relative to\n            this world origin, so that this single detectable may be used to sync x-, y-, and\n            z-coordinate offsets across devices and platforms."
     },
     "attributes" : [ "datatype" ],
-    "id" : "63"
+    "id" : "64"
   }, {
     "iri" : "https://purl.org/arlem-onto#positionX",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "66",
+    "range" : "67",
     "label" : {
       "IRI-based" : "positionX"
     },
-    "domain" : "44",
+    "domain" : "45",
     "attributes" : [ "datatype" ],
-    "id" : "65"
+    "id" : "66"
   }, {
     "iri" : "https://purl.org/arlem-onto#hasPredicates",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "18",
+    "range" : "20",
     "label" : {
       "IRI-based" : "hasPredicates"
     },
     "domain" : "1",
     "comment" : {
-      "en" : "Predicates are reusable instructional augmentations, configuring a specific augmentation primitive for its use in activities."
+      "en" : "Predicates are reusable instructional augmentations, configuring\n            a specific augmentation primitive for its use in activities."
     },
     "attributes" : [ "object" ],
-    "id" : "67"
+    "id" : "68"
   }, {
     "iri" : "https://purl.org/arlem-onto#hasWarnings",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "18",
+    "range" : "20",
     "label" : {
       "IRI-based" : "hasWarnings"
     },
     "domain" : "1",
     "comment" : {
-      "en" : "Definition of the supported warnings and instructions\nNOTE—The AR system shall support all warnings listed in ISO 7010."
-    },
-    "attributes" : [ "object" ],
-    "id" : "69"
-  }, {
-    "iri" : "https://purl.org/arlem-onto#hasAugmentation",
-    "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "72",
-    "label" : {
-      "IRI-based" : "hasAugmentation"
-    },
-    "domain" : "71",
-    "comment" : {
-      "en" : "Instruct the system to display or remove an augmentation by id."
+      "en" : "Definition of the supported warnings and instructions\n            NOTE—The AR system shall support all warnings listed in ISO 7010."
     },
     "attributes" : [ "object" ],
     "id" : "70"
   }, {
-    "range" : "24",
-    "domain" : "41",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "75"
+    "iri" : "https://purl.org/arlem-onto#hasAugmentation",
+    "baseIri" : "https://purl.org/arlem-onto",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "hasAugmentation"
+    },
+    "domain" : "72",
+    "comment" : {
+      "en" : "Instruct the AR training system to play or display the\n            augmentation with the target id provided (a predicate.id, primitive.id, or warning.id\n            from the workplace model or an action.id from the activity model)."
+    },
+    "attributes" : [ "object" ],
+    "id" : "71"
   }, {
     "iri" : "https://purl.org/arlem-onto#removeSelf",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "53",
+    "range" : "54",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "en",
-        "value" : "If set to true, the action triggers the immediate execution of the exit loop once activate, deactivate, message, and if statements contained in this enter loop have been rendered. If not provided, default is assumed to be false",
+        "value" : "If set to true, the action triggers the immediate execution\n            of the exit loop once activate, deactivate, message, and if statements contained in this\n            enter loop have been rendered. If not provided, default is assumed to be false",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "removeSelf"
     },
-    "domain" : "54",
+    "domain" : "55",
     "attributes" : [ "datatype" ],
-    "id" : "78"
+    "id" : "79"
+  }, {
+    "range" : "25",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
   }, {
     "iri" : "https://purl.org/arlem-onto#rotationZ",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "51",
+    "range" : "52",
     "label" : {
       "IRI-based" : "rotationZ"
     },
-    "domain" : "44",
+    "domain" : "45",
     "attributes" : [ "datatype" ],
-    "id" : "80"
+    "id" : "82"
   }, {
     "iri" : "https://purl.org/arlem-onto#scaleY",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "42",
+    "range" : "43",
     "label" : {
       "IRI-based" : "scaleY"
     },
-    "domain" : "44",
+    "domain" : "45",
     "attributes" : [ "datatype" ],
-    "id" : "83"
+    "id" : "85"
   }, {
     "iri" : "https://purl.org/arlem-onto#startWith",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "35",
+    "range" : "36",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1589,110 +1629,126 @@
     "label" : {
       "IRI-based" : "startWith"
     },
-    "domain" : "85",
+    "domain" : "87",
     "attributes" : [ "object" ],
-    "id" : "84"
+    "id" : "86"
   }, {
     "iri" : "https://purl.org/arlem-onto#hasThings",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "18",
+    "range" : "20",
     "label" : {
       "IRI-based" : "hasThings"
     },
     "domain" : "1",
     "comment" : {
-      "en" : "The container object holds an array of definitions of the physical workplace objects such as tools, machines, furniture, or materials"
+      "en" : "The container object holds an array of definitions of the\n            physical workplace objects such as tools, machines, furniture, or materials"
     },
     "attributes" : [ "object" ],
-    "id" : "87"
+    "id" : "88"
   }, {
     "iri" : "https://purl.org/arlem-onto#scaleX",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "43",
+    "range" : "44",
     "label" : {
       "IRI-based" : "scaleX"
     },
-    "domain" : "44",
+    "domain" : "45",
     "attributes" : [ "datatype" ],
-    "id" : "88"
+    "id" : "90"
   }, {
     "iri" : "https://purl.org/arlem-onto#hasWorkplace",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "82",
+    "range" : "84",
     "label" : {
       "IRI-based" : "hasWorkplace"
     },
-    "domain" : "85",
+    "domain" : "87",
     "attributes" : [ "object" ],
-    "id" : "90"
+    "id" : "92"
   }, {
     "iri" : "https://purl.org/arlem-onto#scaleZ",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "45",
+    "range" : "46",
     "label" : {
       "IRI-based" : "scaleZ"
     },
-    "domain" : "44",
+    "domain" : "45",
     "attributes" : [ "datatype" ],
-    "id" : "91"
+    "id" : "93"
   }, {
     "iri" : "https://purl.org/arlem-onto#hasLanguage",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "81",
+    "range" : "83",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "en",
-        "value" : "Specifies the language with which the activity expresses human-readable instructional prompts.",
+        "value" : "Specifies the language with which the activity expresses\n            human-readable instructional prompts.",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "hasLanguage"
     },
-    "domain" : "85",
+    "domain" : "87",
     "attributes" : [ "datatype" ],
-    "id" : "92"
+    "id" : "94"
+  }, {
+    "iri" : "https://purl.org/arlem-onto#hasEnter",
+    "baseIri" : "https://purl.org/arlem-onto",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "hasEnter"
+    },
+    "domain" : "96",
+    "comment" : {
+      "en" : "Container for augmentations that will be activated or\n            deactivated, and which messages and validation rules will be executed, once the action\n            step is launched"
+    },
+    "attributes" : [ "object" ],
+    "id" : "95"
   }, {
     "iri" : "https://purl.org/arlem-onto#hasDetectables",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "18",
+    "range" : "20",
     "label" : {
       "IRI-based" : "hasDetectables"
     },
     "domain" : "1",
+    "comment" : {
+      "en" : "Detectables are entities that link to fiducial markers, target\n            feature models, or other sensor state properties providing input to the computer vision\n            system."
+    },
     "attributes" : [ "object" ],
-    "id" : "93"
+    "id" : "97"
   }, {
     "iri" : "https://purl.org/arlem-onto#hasSensors",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "18",
+    "range" : "20",
     "label" : {
       "IRI-based" : "hasSensors"
     },
     "domain" : "1",
     "comment" : {
-      "en" : "Sensors are hardware devices that detect or measure physical characteristics and communicates the data generated digitally."
+      "en" : "Sensors are hardware devices that detect or measure physical\n            characteristics and communicates the data generated digitally."
     },
     "attributes" : [ "object" ],
-    "id" : "98"
+    "id" : "101"
   }, {
     "iri" : "https://purl.org/arlem-onto#hasPrimitives",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "18",
+    "range" : "20",
     "label" : {
       "IRI-based" : "hasPrimitives"
     },
     "domain" : "1",
     "comment" : {
-      "en" : "Augmentation primitives define the fundamental types of annotations available in the AR training system\nNOTE—The workplace model informs the AR training system, which of the primitives are supported in this workplace. Moreover, for each augmentation primitive, the workplace model defines default size and/or volume level."
+      "en" : "Augmentation primitives define the fundamental types of\n            annotations available in the AR training system\n            NOTE—The workplace model informs the AR training system, which of the primitives are\n            supported in this workplace. Moreover, for each augmentation primitive, the workplace\n            model defines default size and/or volume level."
     },
     "attributes" : [ "object" ],
-    "id" : "99"
+    "id" : "102"
   }, {
     "iri" : "https://purl.org/arlem-onto#hasDescription",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "22",
+    "range" : "23",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1704,26 +1760,26 @@
     "label" : {
       "IRI-based" : "hasDescription"
     },
-    "domain" : "101",
+    "domain" : "104",
     "attributes" : [ "datatype" ],
-    "id" : "100"
+    "id" : "103"
   }, {
     "iri" : "https://purl.org/arlem-onto#xSize",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "36",
+    "range" : "37",
     "label" : {
       "IRI-based" : "xSize"
     },
-    "domain" : "24",
+    "domain" : "25",
     "comment" : {
       "en" : "Width of the 3D primitive in meters (x dimension)."
     },
     "attributes" : [ "datatype" ],
-    "id" : "102"
+    "id" : "105"
   }, {
     "iri" : "https://purl.org/arlem-onto#hasLocation",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "21",
+    "range" : "3",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1735,65 +1791,68 @@
     "label" : {
       "IRI-based" : "hasLocation"
     },
-    "domain" : "35",
-    "attributes" : [ "object" ],
-    "id" : "103"
-  }, {
-    "iri" : "https://purl.org/arlem-onto#hasTrigger",
-    "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "95",
-    "label" : {
-      "IRI-based" : "hasTrigger"
-    },
-    "domain" : "74",
-    "attributes" : [ "object" ],
-    "id" : "104"
-  }, {
-    "iri" : "https://purl.org/arlem-onto#hasTransform",
-    "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "44",
-    "label" : {
-      "IRI-based" : "hasTransform"
-    },
-    "domain" : "24",
+    "domain" : "36",
     "attributes" : [ "object" ],
     "id" : "106"
   }, {
+    "iri" : "https://purl.org/arlem-onto#hasTrigger",
+    "baseIri" : "https://purl.org/arlem-onto",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "hasTrigger"
+    },
+    "domain" : "75",
+    "attributes" : [ "object" ],
+    "id" : "107"
+  }, {
+    "iri" : "https://purl.org/arlem-onto#hasTransform",
+    "baseIri" : "https://purl.org/arlem-onto",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "hasTransform"
+    },
+    "domain" : "25",
+    "attributes" : [ "object" ],
+    "id" : "109"
+  }, {
     "iri" : "https://purl.org/arlem-onto#zSize",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "28",
+    "range" : "29",
     "label" : {
       "IRI-based" : "zSize"
     },
-    "domain" : "24",
+    "domain" : "25",
     "comment" : {
       "en" : "Depth of the 3D primitive in meters (z dimension)."
     },
     "attributes" : [ "datatype" ],
-    "id" : "107"
+    "id" : "110"
   }, {
     "iri" : "https://purl.org/arlem-onto#fileFormat",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "109",
+    "range" : "112",
     "label" : {
       "IRI-based" : "fileFormat"
     },
-    "domain" : "41",
+    "domain" : "42",
     "comment" : {
       "en" : "File format of the 3D model (e.g., glb, obj)."
     },
     "attributes" : [ "datatype" ],
-    "id" : "108"
+    "id" : "111"
   }, {
     "iri" : "https://purl.org/arlem-onto#hasDevices",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "18",
+    "range" : "20",
     "label" : {
       "IRI-based" : "hasDevices"
     },
     "domain" : "1",
+    "comment" : {
+      "en" : "Devices are the AR hardware delivery systems that the AR\n            training system may communicate with to render the learning experience for the user."
+    },
     "attributes" : [ "object" ],
-    "id" : "111"
+    "id" : "114"
   }, {
     "iri" : "https://purl.org/arlem-onto#hasViewport",
     "baseIri" : "https://purl.org/arlem-onto",
@@ -1802,43 +1861,43 @@
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "en",
-        "value" : "The visual area in which any instruction contained in the action displayed.",
+        "value" : "The visual area in which any instruction contained in the\n            action displayed.",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "hasViewport"
     },
-    "domain" : "113",
+    "domain" : "116",
     "attributes" : [ "object" ],
-    "id" : "112"
+    "id" : "115"
   }, {
     "iri" : "https://purl.org/arlem-onto#color",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "115",
+    "range" : "118",
     "label" : {
       "IRI-based" : "color"
     },
-    "domain" : "24",
+    "domain" : "25",
     "attributes" : [ "datatype" ],
-    "id" : "114"
+    "id" : "117"
   }, {
     "iri" : "https://purl.org/arlem-onto#primitiveType",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "105",
+    "range" : "108",
     "label" : {
       "IRI-based" : "primitiveType"
     },
-    "domain" : "24",
+    "domain" : "25",
     "comment" : {
       "en" : "Specifies the VR/AR primitive type of a primitive instance."
     },
     "attributes" : [ "object" ],
-    "id" : "118"
+    "id" : "121"
   }, {
     "iri" : "https://purl.org/arlem-onto#hasTitle",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "79",
+    "range" : "81",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1850,26 +1909,39 @@
     "label" : {
       "IRI-based" : "hasTitle"
     },
-    "domain" : "116",
+    "domain" : "119",
     "attributes" : [ "datatype" ],
-    "id" : "119"
+    "id" : "122"
   }, {
     "iri" : "https://purl.org/arlem-onto#hasApps",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "18",
+    "range" : "20",
     "label" : {
       "IRI-based" : "hasApps"
     },
     "domain" : "1",
     "comment" : {
-      "en" : "The apps container element holds definitions of how to interface the AR system with other apps."
+      "en" : "The apps container element holds definitions of how to interface\n            the AR training system with other apps and widgets."
     },
     "attributes" : [ "object" ],
-    "id" : "120"
+    "id" : "123"
+  }, {
+    "iri" : "https://purl.org/arlem-onto#hasLaunch",
+    "baseIri" : "https://purl.org/arlem-onto",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "hasLaunch"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "Specify which action shall be launched on the recipient device\n            The AR training system shall publish launch ids to other devices or sensors on the MQTT\n            topic target + “/” + id."
+    },
+    "attributes" : [ "object" ],
+    "id" : "125"
   }, {
     "iri" : "https://purl.org/arlem-onto#hasName",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "77",
+    "range" : "76",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1881,34 +1953,34 @@
     "label" : {
       "IRI-based" : "hasName"
     },
-    "domain" : "117",
+    "domain" : "120",
     "attributes" : [ "datatype" ],
-    "id" : "122"
+    "id" : "126"
   }, {
     "iri" : "https://purl.org/arlem-onto#scale",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "49",
+    "range" : "50",
     "label" : {
       "IRI-based" : "scale"
     },
-    "domain" : "68",
+    "domain" : "69",
     "comment" : {
       "en" : "Scale factor for predicate animations."
     },
     "attributes" : [ "datatype" ],
-    "id" : "123"
+    "id" : "127"
   }, {
     "iri" : "https://purl.org/arlem-onto#volume",
     "baseIri" : "https://purl.org/arlem-onto",
-    "range" : "32",
+    "range" : "33",
     "label" : {
       "IRI-based" : "volume"
     },
-    "domain" : "24",
+    "domain" : "25",
     "comment" : {
       "en" : "Audio volume level for audio primitives (0.0-1.0)."
     },
     "attributes" : [ "datatype" ],
-    "id" : "125"
+    "id" : "129"
   } ]
 }

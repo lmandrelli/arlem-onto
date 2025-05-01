@@ -40,7 +40,7 @@
 # https://purl.org/arlem-onto#hasApps
 <https://purl.org/arlem-onto#hasApps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://purl.org/arlem-onto#hasApps> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/arlem-onto#workplace> .
-<https://purl.org/arlem-onto#hasApps> <http://www.w3.org/2000/01/rdf-schema#comment> "The apps container element holds definitions of how to interface the AR system with other apps."@en .
+<https://purl.org/arlem-onto#hasApps> <http://www.w3.org/2000/01/rdf-schema#comment> "The apps container element holds definitions of how to interface\n            the AR training system with other apps and widgets."@en .
 # 
 # https://purl.org/arlem-onto#hasAugmentation
 <https://purl.org/arlem-onto#hasAugmentation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -53,7 +53,7 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/arlem-onto#activate> .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/arlem-onto#hasAugmentation> <http://www.w3.org/2000/01/rdf-schema#comment> "Instruct the system to display or remove an augmentation by id."@en .
+<https://purl.org/arlem-onto#hasAugmentation> <http://www.w3.org/2000/01/rdf-schema#comment> "Instruct the AR training system to play or display the\n            augmentation with the target id provided (a predicate.id, primitive.id, or warning.id\n            from the workplace model or an action.id from the activity model)."@en .
 # 
 # https://purl.org/arlem-onto#hasAugmentationType
 <https://purl.org/arlem-onto#hasAugmentationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -63,14 +63,30 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://purl.org/arlem-onto#hasDetectables
 <https://purl.org/arlem-onto#hasDetectables> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://purl.org/arlem-onto#hasDetectables> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/arlem-onto#workplace> .
+<https://purl.org/arlem-onto#hasDetectables> <http://www.w3.org/2000/01/rdf-schema#comment> "Detectables are entities that link to fiducial markers, target\n            feature models, or other sensor state properties providing input to the computer vision\n            system."@en .
 # 
 # https://purl.org/arlem-onto#hasDevice
 <https://purl.org/arlem-onto#hasDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://purl.org/arlem-onto#hasDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/arlem-onto#action> .
+<https://purl.org/arlem-onto#hasDevice> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Specify on which device to execute the action"@en .
 # 
 # https://purl.org/arlem-onto#hasDevices
 <https://purl.org/arlem-onto#hasDevices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://purl.org/arlem-onto#hasDevices> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/arlem-onto#workplace> .
+<https://purl.org/arlem-onto#hasDevices> <http://www.w3.org/2000/01/rdf-schema#comment> "Devices are the AR hardware delivery systems that the AR\n            training system may communicate with to render the learning experience for the user."@en .
+# 
+# https://purl.org/arlem-onto#hasEnter
+<https://purl.org/arlem-onto#hasEnter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://purl.org/arlem-onto#hasEnter> <http://www.w3.org/2000/01/rdf-schema#comment> "Container for augmentations that will be activated or\n            deactivated, and which messages and validation rules will be executed, once the action\n            step is launched"@en .
+# 
+# https://purl.org/arlem-onto#hasExit
+<https://purl.org/arlem-onto#hasExit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://purl.org/arlem-onto#hasExit> <http://www.w3.org/2000/01/rdf-schema#comment> "Container for augmentations which will be activated or\n            deactivated, and which messages and validation rules will be executed, once the action\n            step is exited"@en .
+# 
+# https://purl.org/arlem-onto#hasLaunch
+<https://purl.org/arlem-onto#hasLaunch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://purl.org/arlem-onto#hasLaunch> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/arlem-onto#message> .
+<https://purl.org/arlem-onto#hasLaunch> <http://www.w3.org/2000/01/rdf-schema#comment> "Specify which action shall be launched on the recipient device\n            The AR training system shall publish launch ids to other devices or sensors on the MQTT\n            topic target + “/” + id."@en .
 # 
 # https://purl.org/arlem-onto#hasLocation
 <https://purl.org/arlem-onto#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -80,12 +96,12 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://purl.org/arlem-onto#hasPersons
 <https://purl.org/arlem-onto#hasPersons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://purl.org/arlem-onto#hasPersons> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/arlem-onto#workplace> .
-<https://purl.org/arlem-onto#hasPersons> <http://www.w3.org/2000/01/rdf-schema#comment> "Persons refer to the people in the workplace with whom the user may interact"@en .
+<https://purl.org/arlem-onto#hasPersons> <http://www.w3.org/2000/01/rdf-schema#comment> "Persons refer to the people in the workplace with whom the user\n            may interact"@en .
 # 
 # https://purl.org/arlem-onto#hasPlaces
 <https://purl.org/arlem-onto#hasPlaces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://purl.org/arlem-onto#hasPlaces> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/arlem-onto#workplace> .
-<https://purl.org/arlem-onto#hasPlaces> <http://www.w3.org/2000/01/rdf-schema#comment> "Places are tangibles. They refer to locations within the workplace."@en .
+<https://purl.org/arlem-onto#hasPlaces> <http://www.w3.org/2000/01/rdf-schema#comment> "Places are tangibles. They refer to locations within the\n            workplace."@en .
 # 
 # https://purl.org/arlem-onto#hasPoi
 <https://purl.org/arlem-onto#hasPoi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -98,27 +114,27 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/arlem-onto#activate> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/arlem-onto#hasPoi> <http://www.w3.org/2000/01/rdf-schema#comment> "Specify the point of interest (poi) from where to remove the augmentation"@en .
+<https://purl.org/arlem-onto#hasPoi> <http://www.w3.org/2000/01/rdf-schema#comment> "Specify the point of interest (poi) from where to remove the\n            augmentation"@en .
 # 
 # https://purl.org/arlem-onto#hasPredicate
 <https://purl.org/arlem-onto#hasPredicate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://purl.org/arlem-onto#hasPredicate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/arlem-onto#action> .
-<https://purl.org/arlem-onto#hasPredicate> <http://www.w3.org/2000/01/rdf-schema#comment> "The action may specify what verb to log user interaction with via the xAPI.\nWhen no predicate is provided, logging shall use the standard xAPI verb “launched” for each action step.\nIf xAPI is supported by the AR training system, then any predicate id used shall correspond to the id of the resultant xAPI verb statement definition."@en .
+<https://purl.org/arlem-onto#hasPredicate> <http://www.w3.org/2000/01/rdf-schema#comment> "The action may specify what verb to log user interaction with\n            via the xAPI.\n            When no predicate is provided, logging shall use the standard xAPI verb “launched” for\n            each action step.\n            If xAPI is supported by the AR training system, then any predicate id used shall\n            correspond to the id of the resultant xAPI verb statement definition."@en .
 # 
 # https://purl.org/arlem-onto#hasPredicates
 <https://purl.org/arlem-onto#hasPredicates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://purl.org/arlem-onto#hasPredicates> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/arlem-onto#workplace> .
-<https://purl.org/arlem-onto#hasPredicates> <http://www.w3.org/2000/01/rdf-schema#comment> "Predicates are reusable instructional augmentations, configuring a specific augmentation primitive for its use in activities."@en .
+<https://purl.org/arlem-onto#hasPredicates> <http://www.w3.org/2000/01/rdf-schema#comment> "Predicates are reusable instructional augmentations, configuring\n            a specific augmentation primitive for its use in activities."@en .
 # 
 # https://purl.org/arlem-onto#hasPrimitives
 <https://purl.org/arlem-onto#hasPrimitives> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://purl.org/arlem-onto#hasPrimitives> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/arlem-onto#workplace> .
-<https://purl.org/arlem-onto#hasPrimitives> <http://www.w3.org/2000/01/rdf-schema#comment> "Augmentation primitives define the fundamental types of annotations available in the AR training system\nNOTE—The workplace model informs the AR training system, which of the primitives are supported in this workplace. Moreover, for each augmentation primitive, the workplace model defines default size and/or volume level."@en .
+<https://purl.org/arlem-onto#hasPrimitives> <http://www.w3.org/2000/01/rdf-schema#comment> "Augmentation primitives define the fundamental types of\n            annotations available in the AR training system\n            NOTE—The workplace model informs the AR training system, which of the primitives are\n            supported in this workplace. Moreover, for each augmentation primitive, the workplace\n            model defines default size and/or volume level."@en .
 # 
 # https://purl.org/arlem-onto#hasSensors
 <https://purl.org/arlem-onto#hasSensors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://purl.org/arlem-onto#hasSensors> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/arlem-onto#workplace> .
-<https://purl.org/arlem-onto#hasSensors> <http://www.w3.org/2000/01/rdf-schema#comment> "Sensors are hardware devices that detect or measure physical characteristics and communicates the data generated digitally."@en .
+<https://purl.org/arlem-onto#hasSensors> <http://www.w3.org/2000/01/rdf-schema#comment> "Sensors are hardware devices that detect or measure physical\n            characteristics and communicates the data generated digitally."@en .
 # 
 # https://purl.org/arlem-onto#hasTarget
 <https://purl.org/arlem-onto#hasTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -135,7 +151,7 @@ _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://purl.org/arlem-onto#hasThings
 <https://purl.org/arlem-onto#hasThings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://purl.org/arlem-onto#hasThings> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/arlem-onto#workplace> .
-<https://purl.org/arlem-onto#hasThings> <http://www.w3.org/2000/01/rdf-schema#comment> "The container object holds an array of definitions of the physical workplace objects such as tools, machines, furniture, or materials"@en .
+<https://purl.org/arlem-onto#hasThings> <http://www.w3.org/2000/01/rdf-schema#comment> "The container object holds an array of definitions of the\n            physical workplace objects such as tools, machines, furniture, or materials"@en .
 # 
 # https://purl.org/arlem-onto#hasTransform
 <https://purl.org/arlem-onto#hasTransform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -165,12 +181,12 @@ _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/a
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/arlem-onto#hasViewport> <http://www.w3.org/2000/01/rdf-schema#range> <https://purl.org/arlem-onto#viewport> .
-<https://purl.org/arlem-onto#hasViewport> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "The visual area in which any instruction contained in the action displayed."@en .
+<https://purl.org/arlem-onto#hasViewport> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "The visual area in which any instruction contained in the\n            action displayed."@en .
 # 
 # https://purl.org/arlem-onto#hasWarnings
 <https://purl.org/arlem-onto#hasWarnings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://purl.org/arlem-onto#hasWarnings> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/arlem-onto#workplace> .
-<https://purl.org/arlem-onto#hasWarnings> <http://www.w3.org/2000/01/rdf-schema#comment> "Definition of the supported warnings and instructions\nNOTE—The AR system shall support all warnings listed in ISO 7010."@en .
+<https://purl.org/arlem-onto#hasWarnings> <http://www.w3.org/2000/01/rdf-schema#comment> "Definition of the supported warnings and instructions\n            NOTE—The AR system shall support all warnings listed in ISO 7010."@en .
 # 
 # https://purl.org/arlem-onto#hasWorkplace
 <https://purl.org/arlem-onto#hasWorkplace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -231,12 +247,12 @@ _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://purl.org/arlem-onto#hasKey
 <https://purl.org/arlem-onto#hasKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://purl.org/arlem-onto#hasKey> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/arlem-onto#message> .
-<https://purl.org/arlem-onto#hasKey> <http://www.w3.org/2000/01/rdf-schema#comment> "Specify which variable key (MQTT “topic”) to use for broadcasting the message contents"@en .
+<https://purl.org/arlem-onto#hasKey> <http://www.w3.org/2000/01/rdf-schema#comment> "Specify which variable key (MQTT “topic”) to use for\n            broadcasting the message contents"@en .
 # 
 # https://purl.org/arlem-onto#hasLanguage
 <https://purl.org/arlem-onto#hasLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://purl.org/arlem-onto#hasLanguage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/arlem-onto#activity> .
-<https://purl.org/arlem-onto#hasLanguage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Specifies the language with which the activity expresses human-readable instructional prompts."@en .
+<https://purl.org/arlem-onto#hasLanguage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Specifies the language with which the activity expresses\n            human-readable instructional prompts."@en .
 # 
 # https://purl.org/arlem-onto#hasName
 <https://purl.org/arlem-onto#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -254,7 +270,7 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://purl.org/arlem-onto#hasOrigin
 <https://purl.org/arlem-onto#hasOrigin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://purl.org/arlem-onto#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/arlem-onto#workplace> .
-<https://purl.org/arlem-onto#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#comment> "The id of a detectable that marks the world origin for the work place\nAll positions of all other detectables of type “anchor” shall be expressed relative to this world origin, so that this single detectable may be used to sync x-, y-, and z-coordinate offsets across devices and platforms."@en .
+<https://purl.org/arlem-onto#hasOrigin> <http://www.w3.org/2000/01/rdf-schema#comment> "The id of a detectable that marks the world origin for the work\n            place\n            All positions of all other detectables of type “anchor” shall be expressed relative to\n            this world origin, so that this single detectable may be used to sync x-, y-, and\n            z-coordinate offsets across devices and platforms."@en .
 # 
 # https://purl.org/arlem-onto#hasTarget
 <https://purl.org/arlem-onto#hasTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -262,7 +278,7 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://purl.org/arlem-onto#hasText
 <https://purl.org/arlem-onto#hasText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://purl.org/arlem-onto#hasText> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/arlem-onto#message> .
-<https://purl.org/arlem-onto#hasText> <http://www.w3.org/2000/01/rdf-schema#comment> "The message content as human readable text is included as the text node of message element"@en .
+<https://purl.org/arlem-onto#hasText> <http://www.w3.org/2000/01/rdf-schema#comment> "The message content as human readable text is included as the\n            text node of message element"@en .
 # 
 # https://purl.org/arlem-onto#hasTitle
 <https://purl.org/arlem-onto#hasTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -303,7 +319,7 @@ _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.org/a
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/arlem-onto#removeSelf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
-<https://purl.org/arlem-onto#removeSelf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "If set to true, the action triggers the immediate execution of the exit loop once activate, deactivate, message, and if statements contained in this enter loop have been rendered. If not provided, default is assumed to be false"@en .
+<https://purl.org/arlem-onto#removeSelf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "If set to true, the action triggers the immediate execution\n            of the exit loop once activate, deactivate, message, and if statements contained in this\n            enter loop have been rendered. If not provided, default is assumed to be false"@en .
 # 
 # https://purl.org/arlem-onto#rotationX
 <https://purl.org/arlem-onto#rotationX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -345,7 +361,7 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://purl.org/arlem-onto#url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://purl.org/arlem-onto#url> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/arlem-onto#primitive> .
 <https://purl.org/arlem-onto#url> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
-<https://purl.org/arlem-onto#url> <http://www.w3.org/2000/01/rdf-schema#comment> "URL for loading external resources (3D models, images, videos, audio)."@en .
+<https://purl.org/arlem-onto#url> <http://www.w3.org/2000/01/rdf-schema#comment> "URL for loading external resources (3D models, images, videos,\n            audio)."@en .
 # 
 # https://purl.org/arlem-onto#volume
 <https://purl.org/arlem-onto#volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -383,7 +399,7 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://purl.org/arlem-onto#Model3D
 <https://purl.org/arlem-onto#Model3D> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.org/arlem-onto#Model3D> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.org/arlem-onto#primitive> .
-<https://purl.org/arlem-onto#Model3D> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract class to represent any 3D model resource (GLB, OBJ, etc.)."@en .
+<https://purl.org/arlem-onto#Model3D> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract class to represent any 3D model resource (GLB, OBJ,\n            etc.)."@en .
 # 
 # https://purl.org/arlem-onto#ModelFormat
 <https://purl.org/arlem-onto#ModelFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -402,11 +418,11 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://purl.org/arlem-onto#activate
 <https://purl.org/arlem-onto#activate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/arlem-onto#activate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Statement to execute effector output: load and display an augmentation to the user"@en .
+<https://purl.org/arlem-onto#activate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Statement to execute effector output: load and display an\n            augmentation to the user"@en .
 # 
 # https://purl.org/arlem-onto#activity
 <https://purl.org/arlem-onto#activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/arlem-onto#activity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "The activity contains a sequence of action steps, leading the user through the workflow needed to develop and demonstrate competence in the intended learning outcome."@en .
+<https://purl.org/arlem-onto#activity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "The activity contains a sequence of action steps, leading\n            the user through the workflow needed to develop and demonstrate competence in the\n            intended learning outcome."@en .
 # 
 # https://purl.org/arlem-onto#app
 <https://purl.org/arlem-onto#app> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -422,31 +438,31 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://purl.org/arlem-onto#detectable
 <https://purl.org/arlem-onto#detectable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/arlem-onto#detectable> <http://www.w3.org/2000/01/rdf-schema#comment> "A detectable instructs the system how to recognize tangibles (things, places, or people)."@en .
+<https://purl.org/arlem-onto#detectable> <http://www.w3.org/2000/01/rdf-schema#comment> "A detectable instructs the system how to recognize tangibles\n            (things, places, or people)."@en .
 # 
 # https://purl.org/arlem-onto#device
 <https://purl.org/arlem-onto#device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/arlem-onto#device> <http://www.w3.org/2000/01/rdf-schema#comment> "The hardware device that may be used to deliver activities or parts of activities created in this workplace."@en .
+<https://purl.org/arlem-onto#device> <http://www.w3.org/2000/01/rdf-schema#comment> "The hardware device that may be used to deliver activities or\n            parts of activities created in this workplace."@en .
 # 
 # https://purl.org/arlem-onto#enter
 <https://purl.org/arlem-onto#enter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/arlem-onto#enter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Container for augmentations that will be activated or deactivated, and which messages and validation rules will be executed, once the action step is launched"@en .
+<https://purl.org/arlem-onto#enter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Container for augmentations that will be activated or\n            deactivated, and which messages and validation rules will be executed, once the action\n            step is launched"@en .
 # 
 # https://purl.org/arlem-onto#exit
 <https://purl.org/arlem-onto#exit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/arlem-onto#exit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Container for augmentations which will be activated or deactivated, and which messages and validation rules will be executed, once the action step is exited"@en .
+<https://purl.org/arlem-onto#exit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Container for augmentations which will be activated or\n            deactivated, and which messages and validation rules will be executed, once the action\n            step is exited"@en .
 # 
 # https://purl.org/arlem-onto#if
 <https://purl.org/arlem-onto#if> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/arlem-onto#if> <http://www.w3.org/2000/01/rdf-schema#comment> "Specify a rule for validating user behavior and other characteristics with defined queries to determine branching of the flow of action"@en .
+<https://purl.org/arlem-onto#if> <http://www.w3.org/2000/01/rdf-schema#comment> "Specify a rule for validating user behavior and other\n            characteristics with defined queries to determine branching of the flow of action"@en .
 # 
 # https://purl.org/arlem-onto#instruction
 <https://purl.org/arlem-onto#instruction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/arlem-onto#instruction> <http://www.w3.org/2000/01/rdf-schema#comment> "Human-readable directives and prompts for the learner for this particular action step"@en .
+<https://purl.org/arlem-onto#instruction> <http://www.w3.org/2000/01/rdf-schema#comment> "Human-readable directives and prompts for the learner for this\n            particular action step"@en .
 # 
 # https://purl.org/arlem-onto#message
 <https://purl.org/arlem-onto#message> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/arlem-onto#message> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Specify message statements to allow sending control commands and communication from device to device and user to user"@en .
+<https://purl.org/arlem-onto#message> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Specify message statements to allow sending control commands\n            and communication from device to device and user to user"@en .
 # 
 # https://purl.org/arlem-onto#person
 <https://purl.org/arlem-onto#person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -465,23 +481,23 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://purl.org/arlem-onto#sensor
 <https://purl.org/arlem-onto#sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/arlem-onto#sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "For each sensor, the workplace model describes how to connect and what data streams to subscribe to."@en .
+<https://purl.org/arlem-onto#sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "For each sensor, the workplace model describes how to connect\n            and what data streams to subscribe to."@en .
 # 
 # https://purl.org/arlem-onto#thing
 <https://purl.org/arlem-onto#thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/arlem-onto#thing> <http://www.w3.org/2000/01/rdf-schema#comment> "The container element holds the definition of a single physical workplace object."@en .
+<https://purl.org/arlem-onto#thing> <http://www.w3.org/2000/01/rdf-schema#comment> "The container element holds the definition of a single physical\n            workplace object."@en .
 # 
 # https://purl.org/arlem-onto#trigger
 <https://purl.org/arlem-onto#trigger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/arlem-onto#trigger> <http://www.w3.org/2000/01/rdf-schema#comment> "The trigger is enabled after the statements on the enter stack have been evaluated, starting the execution of the stack of exit statements when released"@en .
+<https://purl.org/arlem-onto#trigger> <http://www.w3.org/2000/01/rdf-schema#comment> "The trigger is enabled after the statements on the enter stack\n            have been evaluated, starting the execution of the stack of exit statements when\n            released"@en .
 # 
 # https://purl.org/arlem-onto#viewport
 <https://purl.org/arlem-onto#viewport> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/arlem-onto#viewport> <http://www.w3.org/2000/01/rdf-schema#comment> "The visual area in which any instruction contained in the action displayed"@en .
+<https://purl.org/arlem-onto#viewport> <http://www.w3.org/2000/01/rdf-schema#comment> "The visual area in which any instruction contained in the action\n            displayed"@en .
 # 
 # https://purl.org/arlem-onto#workplace
 <https://purl.org/arlem-onto#workplace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.org/arlem-onto#workplace> <http://www.w3.org/2000/01/rdf-schema#comment> "The workplace element contains all information about a physical environment in which users learn by performing tasks with real and virtual objects."@en .
+<https://purl.org/arlem-onto#workplace> <http://www.w3.org/2000/01/rdf-schema#comment> "The workplace element contains all information about a physical\n            environment in which users learn by performing tasks with real and virtual objects."@en .
 # 
 # https://purl.org/arlem-onto#workplaceElement
 <https://purl.org/arlem-onto#workplaceElement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -551,14 +567,14 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://purl.org/arlem-onto#obj
 <https://purl.org/arlem-onto#obj> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://purl.org/arlem-onto#obj> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/arlem-onto#ModelFormat> .
-<https://purl.org/arlem-onto#obj> <http://www.w3.org/2000/01/rdf-schema#comment> "Specify which action shall be launched on the recipient device \nThe AR training system shall publish launch ids to other devices or sensors on the MQTT topic target + “/” + id."@en .
+<https://purl.org/arlem-onto#obj> <http://www.w3.org/2000/01/rdf-schema#comment> "Specify which action shall be launched on the recipient device\n            The AR training system shall publish launch ids to other devices or sensors on the MQTT\n            topic target + “/” + id."@en .
 # 
 # https://purl.org/arlem-onto#point
 <https://purl.org/arlem-onto#point> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://purl.org/arlem-onto#point> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/arlem-onto#predicate> .
 <https://purl.org/arlem-onto#point> <https://purl.org/arlem-onto#hasType> <https://purl.org/arlem-onto#animation> .
 <https://purl.org/arlem-onto#point> <https://purl.org/arlem-onto#scale> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-<https://purl.org/arlem-onto#point> <https://purl.org/arlem-onto#url> "http://example.com/point.fbx"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://purl.org/arlem-onto#point> <https://purl.org/arlem-onto#url> "\n            http://example.com/point.fbx"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 <https://purl.org/arlem-onto#point> <http://www.w3.org/2000/01/rdf-schema#comment> "Predicate for pointing action using animation primitive."@en .
 # 
 # https://purl.org/arlem-onto#predicateAugmentation
@@ -586,7 +602,7 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://purl.org/arlem-onto#rotate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/arlem-onto#predicate> .
 <https://purl.org/arlem-onto#rotate> <https://purl.org/arlem-onto#hasType> <https://purl.org/arlem-onto#animation> .
 <https://purl.org/arlem-onto#rotate> <https://purl.org/arlem-onto#scale> "1.0"^^<http://www.w3.org/2001/XMLSchema#decimal> .
-<https://purl.org/arlem-onto#rotate> <https://purl.org/arlem-onto#url> "http://example.com/rotate.fbx"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://purl.org/arlem-onto#rotate> <https://purl.org/arlem-onto#url> "\n            http://example.com/rotate.fbx"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 <https://purl.org/arlem-onto#rotate> <http://www.w3.org/2000/01/rdf-schema#comment> "Predicate for rotation action using animation primitive."@en .
 # 
 # https://purl.org/arlem-onto#sphere
@@ -621,9 +637,9 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 <https://purl.org/arlem-onto#hasAugmentationType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Specify which augmentation type the id refers to."@en .
 # 
-<https://purl.org/arlem-onto#hasTarget> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference to unique identifier of a tangible in the workplace model."@en .
+<https://purl.org/arlem-onto#hasTarget> <http://www.w3.org/2000/01/rdf-schema#comment> "Reference to unique identifier of a tangible in the workplace\n            model."@en .
 # 
-<https://purl.org/arlem-onto#hasType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Specifies the category of the action and is used for styling visual appearance"@en .
+<https://purl.org/arlem-onto#hasType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Specifies the category of the action and is used for styling\n            visual appearance"@en .
 # 
 <https://purl.org/arlem-onto#primitive> <http://www.w3.org/2000/01/rdf-schema#comment> "Definition of a particular type of augmentation"@en .
 # 

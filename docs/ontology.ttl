@@ -44,7 +44,8 @@
 ###  https://purl.org/arlem-onto#hasApps
 :hasApps rdf:type owl:ObjectProperty ;
          rdfs:domain :workplace ;
-         rdfs:comment "The apps container element holds definitions of how to interface the AR system with other apps."@en .
+         rdfs:comment """The apps container element holds definitions of how to interface
+            the AR training system with other apps and widgets."""@en .
 
 
 ###  https://purl.org/arlem-onto#hasAugmentation
@@ -54,7 +55,9 @@
                                              :deactivate
                                            )
                              ] ;
-                 rdfs:comment "Instruct the system to display or remove an augmentation by id."@en .
+                 rdfs:comment """Instruct the AR training system to play or display the
+            augmentation with the target id provided (a predicate.id, primitive.id, or warning.id
+            from the workplace model or an action.id from the activity model)."""@en .
 
 
 ###  https://purl.org/arlem-onto#hasAugmentationType
@@ -65,17 +68,45 @@
 
 ###  https://purl.org/arlem-onto#hasDetectables
 :hasDetectables rdf:type owl:ObjectProperty ;
-                rdfs:domain :workplace .
+                rdfs:domain :workplace ;
+                rdfs:comment """Detectables are entities that link to fiducial markers, target
+            feature models, or other sensor state properties providing input to the computer vision
+            system."""@en .
 
 
 ###  https://purl.org/arlem-onto#hasDevice
 :hasDevice rdf:type owl:ObjectProperty ;
-           rdfs:domain :action .
+           rdfs:domain :action ;
+           rdfs:isDefinedBy "Specify on which device to execute the action"@en .
 
 
 ###  https://purl.org/arlem-onto#hasDevices
 :hasDevices rdf:type owl:ObjectProperty ;
-            rdfs:domain :workplace .
+            rdfs:domain :workplace ;
+            rdfs:comment """Devices are the AR hardware delivery systems that the AR
+            training system may communicate with to render the learning experience for the user."""@en .
+
+
+###  https://purl.org/arlem-onto#hasEnter
+:hasEnter rdf:type owl:ObjectProperty ;
+          rdfs:comment """Container for augmentations that will be activated or
+            deactivated, and which messages and validation rules will be executed, once the action
+            step is launched"""@en .
+
+
+###  https://purl.org/arlem-onto#hasExit
+:hasExit rdf:type owl:ObjectProperty ;
+         rdfs:comment """Container for augmentations which will be activated or
+            deactivated, and which messages and validation rules will be executed, once the action
+            step is exited"""@en .
+
+
+###  https://purl.org/arlem-onto#hasLaunch
+:hasLaunch rdf:type owl:ObjectProperty ;
+           rdfs:domain :message ;
+           rdfs:comment """Specify which action shall be launched on the recipient device
+            The AR training system shall publish launch ids to other devices or sensors on the MQTT
+            topic target + “/” + id."""@en .
 
 
 ###  https://purl.org/arlem-onto#hasLocation
@@ -87,13 +118,15 @@
 ###  https://purl.org/arlem-onto#hasPersons
 :hasPersons rdf:type owl:ObjectProperty ;
             rdfs:domain :workplace ;
-            rdfs:comment "Persons refer to the people in the workplace with whom the user may interact"@en .
+            rdfs:comment """Persons refer to the people in the workplace with whom the user
+            may interact"""@en .
 
 
 ###  https://purl.org/arlem-onto#hasPlaces
 :hasPlaces rdf:type owl:ObjectProperty ;
            rdfs:domain :workplace ;
-           rdfs:comment "Places are tangibles. They refer to locations within the workplace."@en .
+           rdfs:comment """Places are tangibles. They refer to locations within the
+            workplace."""@en .
 
 
 ###  https://purl.org/arlem-onto#hasPoi
@@ -103,34 +136,43 @@
                                     :deactivate
                                   )
                     ] ;
-        rdfs:comment "Specify the point of interest (poi) from where to remove the augmentation"@en .
+        rdfs:comment """Specify the point of interest (poi) from where to remove the
+            augmentation"""@en .
 
 
 ###  https://purl.org/arlem-onto#hasPredicate
 :hasPredicate rdf:type owl:ObjectProperty ;
               rdfs:domain :action ;
-              rdfs:comment """The action may specify what verb to log user interaction with via the xAPI.
-When no predicate is provided, logging shall use the standard xAPI verb “launched” for each action step.
-If xAPI is supported by the AR training system, then any predicate id used shall correspond to the id of the resultant xAPI verb statement definition."""@en .
+              rdfs:comment """The action may specify what verb to log user interaction with
+            via the xAPI.
+            When no predicate is provided, logging shall use the standard xAPI verb “launched” for
+            each action step.
+            If xAPI is supported by the AR training system, then any predicate id used shall
+            correspond to the id of the resultant xAPI verb statement definition."""@en .
 
 
 ###  https://purl.org/arlem-onto#hasPredicates
 :hasPredicates rdf:type owl:ObjectProperty ;
                rdfs:domain :workplace ;
-               rdfs:comment "Predicates are reusable instructional augmentations, configuring a specific augmentation primitive for its use in activities."@en .
+               rdfs:comment """Predicates are reusable instructional augmentations, configuring
+            a specific augmentation primitive for its use in activities."""@en .
 
 
 ###  https://purl.org/arlem-onto#hasPrimitives
 :hasPrimitives rdf:type owl:ObjectProperty ;
                rdfs:domain :workplace ;
-               rdfs:comment """Augmentation primitives define the fundamental types of annotations available in the AR training system
-NOTE—The workplace model informs the AR training system, which of the primitives are supported in this workplace. Moreover, for each augmentation primitive, the workplace model defines default size and/or volume level."""@en .
+               rdfs:comment """Augmentation primitives define the fundamental types of
+            annotations available in the AR training system
+            NOTE—The workplace model informs the AR training system, which of the primitives are
+            supported in this workplace. Moreover, for each augmentation primitive, the workplace
+            model defines default size and/or volume level."""@en .
 
 
 ###  https://purl.org/arlem-onto#hasSensors
 :hasSensors rdf:type owl:ObjectProperty ;
             rdfs:domain :workplace ;
-            rdfs:comment "Sensors are hardware devices that detect or measure physical characteristics and communicates the data generated digitally."@en .
+            rdfs:comment """Sensors are hardware devices that detect or measure physical
+            characteristics and communicates the data generated digitally."""@en .
 
 
 ###  https://purl.org/arlem-onto#hasTarget
@@ -145,7 +187,8 @@ NOTE—The workplace model informs the AR training system, which of the primitiv
 ###  https://purl.org/arlem-onto#hasThings
 :hasThings rdf:type owl:ObjectProperty ;
            rdfs:domain :workplace ;
-           rdfs:comment "The container object holds an array of definitions of the physical workplace objects such as tools, machines, furniture, or materials"@en .
+           rdfs:comment """The container object holds an array of definitions of the
+            physical workplace objects such as tools, machines, furniture, or materials"""@en .
 
 
 ###  https://purl.org/arlem-onto#hasTransform
@@ -173,14 +216,15 @@ NOTE—The workplace model informs the AR training system, which of the primitiv
                                        )
                          ] ;
              rdfs:range :viewport ;
-             rdfs:isDefinedBy "The visual area in which any instruction contained in the action displayed."@en .
+             rdfs:isDefinedBy """The visual area in which any instruction contained in the
+            action displayed."""@en .
 
 
 ###  https://purl.org/arlem-onto#hasWarnings
 :hasWarnings rdf:type owl:ObjectProperty ;
              rdfs:domain :workplace ;
              rdfs:comment """Definition of the supported warnings and instructions
-NOTE—The AR system shall support all warnings listed in ISO 7010."""@en .
+            NOTE—The AR system shall support all warnings listed in ISO 7010."""@en .
 
 
 ###  https://purl.org/arlem-onto#hasWorkplace
@@ -241,13 +285,15 @@ NOTE—The AR system shall support all warnings listed in ISO 7010."""@en .
 ###  https://purl.org/arlem-onto#hasKey
 :hasKey rdf:type owl:DatatypeProperty ;
         rdfs:domain :message ;
-        rdfs:comment "Specify which variable key (MQTT “topic”) to use for broadcasting the message contents"@en .
+        rdfs:comment """Specify which variable key (MQTT “topic”) to use for
+            broadcasting the message contents"""@en .
 
 
 ###  https://purl.org/arlem-onto#hasLanguage
 :hasLanguage rdf:type owl:DatatypeProperty ;
              rdfs:domain :activity ;
-             rdfs:isDefinedBy "Specifies the language with which the activity expresses human-readable instructional prompts."@en .
+             rdfs:isDefinedBy """Specifies the language with which the activity expresses
+            human-readable instructional prompts."""@en .
 
 
 ###  https://purl.org/arlem-onto#hasName
@@ -263,8 +309,11 @@ NOTE—The AR system shall support all warnings listed in ISO 7010."""@en .
 ###  https://purl.org/arlem-onto#hasOrigin
 :hasOrigin rdf:type owl:DatatypeProperty ;
            rdfs:domain :workplace ;
-           rdfs:comment """The id of a detectable that marks the world origin for the work place
-All positions of all other detectables of type “anchor” shall be expressed relative to this world origin, so that this single detectable may be used to sync x-, y-, and z-coordinate offsets across devices and platforms."""@en .
+           rdfs:comment """The id of a detectable that marks the world origin for the work
+            place
+            All positions of all other detectables of type “anchor” shall be expressed relative to
+            this world origin, so that this single detectable may be used to sync x-, y-, and
+            z-coordinate offsets across devices and platforms."""@en .
 
 
 ###  https://purl.org/arlem-onto#hasTarget
@@ -274,7 +323,8 @@ All positions of all other detectables of type “anchor” shall be expressed r
 ###  https://purl.org/arlem-onto#hasText
 :hasText rdf:type owl:DatatypeProperty ;
          rdfs:domain :message ;
-         rdfs:comment "The message content as human readable text is included as the text node of message element"@en .
+         rdfs:comment """The message content as human readable text is included as the
+            text node of message element"""@en .
 
 
 ###  https://purl.org/arlem-onto#hasTitle
@@ -318,7 +368,9 @@ All positions of all other detectables of type “anchor” shall be expressed r
                                       )
                         ] ;
             rdfs:range xsd:boolean ;
-            rdfs:isDefinedBy "If set to true, the action triggers the immediate execution of the exit loop once activate, deactivate, message, and if statements contained in this enter loop have been rendered. If not provided, default is assumed to be false"@en .
+            rdfs:isDefinedBy """If set to true, the action triggers the immediate execution
+            of the exit loop once activate, deactivate, message, and if statements contained in this
+            enter loop have been rendered. If not provided, default is assumed to be false"""@en .
 
 
 ###  https://purl.org/arlem-onto#rotationX
@@ -368,7 +420,8 @@ All positions of all other detectables of type “anchor” shall be expressed r
 :url rdf:type owl:DatatypeProperty ;
      rdfs:domain :primitive ;
      rdfs:range xsd:anyURI ;
-     rdfs:comment "URL for loading external resources (3D models, images, videos, audio)."@en .
+     rdfs:comment """URL for loading external resources (3D models, images, videos,
+            audio)."""@en .
 
 
 ###  https://purl.org/arlem-onto#volume
@@ -406,7 +459,8 @@ All positions of all other detectables of type “anchor” shall be expressed r
 ###  https://purl.org/arlem-onto#Model3D
 :Model3D rdf:type owl:Class ;
          rdfs:subClassOf :primitive ;
-         rdfs:comment "Abstract class to represent any 3D model resource (GLB, OBJ, etc.)."@en .
+         rdfs:comment """Abstract class to represent any 3D model resource (GLB, OBJ,
+            etc.)."""@en .
 
 
 ###  https://purl.org/arlem-onto#ModelFormat
@@ -430,12 +484,15 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
 ###  https://purl.org/arlem-onto#activate
 :activate rdf:type owl:Class ;
-          rdfs:isDefinedBy "Statement to execute effector output: load and display an augmentation to the user"@en .
+          rdfs:isDefinedBy """Statement to execute effector output: load and display an
+            augmentation to the user"""@en .
 
 
 ###  https://purl.org/arlem-onto#activity
 :activity rdf:type owl:Class ;
-          rdfs:isDefinedBy "The activity contains a sequence of action steps, leading the user through the workflow needed to develop and demonstrate competence in the intended learning outcome."@en .
+          rdfs:isDefinedBy """The activity contains a sequence of action steps, leading
+            the user through the workflow needed to develop and demonstrate competence in the
+            intended learning outcome."""@en .
 
 
 ###  https://purl.org/arlem-onto#app
@@ -455,37 +512,46 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
 ###  https://purl.org/arlem-onto#detectable
 :detectable rdf:type owl:Class ;
-            rdfs:comment "A detectable instructs the system how to recognize tangibles (things, places, or people)."@en .
+            rdfs:comment """A detectable instructs the system how to recognize tangibles
+            (things, places, or people)."""@en .
 
 
 ###  https://purl.org/arlem-onto#device
 :device rdf:type owl:Class ;
-        rdfs:comment "The hardware device that may be used to deliver activities or parts of activities created in this workplace."@en .
+        rdfs:comment """The hardware device that may be used to deliver activities or
+            parts of activities created in this workplace."""@en .
 
 
 ###  https://purl.org/arlem-onto#enter
 :enter rdf:type owl:Class ;
-       rdfs:isDefinedBy "Container for augmentations that will be activated or deactivated, and which messages and validation rules will be executed, once the action step is launched"@en .
+       rdfs:isDefinedBy """Container for augmentations that will be activated or
+            deactivated, and which messages and validation rules will be executed, once the action
+            step is launched"""@en .
 
 
 ###  https://purl.org/arlem-onto#exit
 :exit rdf:type owl:Class ;
-      rdfs:isDefinedBy "Container for augmentations which will be activated or deactivated, and which messages and validation rules will be executed, once the action step is exited"@en .
+      rdfs:isDefinedBy """Container for augmentations which will be activated or
+            deactivated, and which messages and validation rules will be executed, once the action
+            step is exited"""@en .
 
 
 ###  https://purl.org/arlem-onto#if
 :if rdf:type owl:Class ;
-    rdfs:comment "Specify a rule for validating user behavior and other characteristics with defined queries to determine branching of the flow of action"@en .
+    rdfs:comment """Specify a rule for validating user behavior and other
+            characteristics with defined queries to determine branching of the flow of action"""@en .
 
 
 ###  https://purl.org/arlem-onto#instruction
 :instruction rdf:type owl:Class ;
-             rdfs:comment "Human-readable directives and prompts for the learner for this particular action step"@en .
+             rdfs:comment """Human-readable directives and prompts for the learner for this
+            particular action step"""@en .
 
 
 ###  https://purl.org/arlem-onto#message
 :message rdf:type owl:Class ;
-         rdfs:isDefinedBy "Specify message statements to allow sending control commands and communication from device to device and user to user"@en .
+         rdfs:isDefinedBy """Specify message statements to allow sending control commands
+            and communication from device to device and user to user"""@en .
 
 
 ###  https://purl.org/arlem-onto#person
@@ -509,27 +575,33 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
 ###  https://purl.org/arlem-onto#sensor
 :sensor rdf:type owl:Class ;
-        rdfs:comment "For each sensor, the workplace model describes how to connect and what data streams to subscribe to."@en .
+        rdfs:comment """For each sensor, the workplace model describes how to connect
+            and what data streams to subscribe to."""@en .
 
 
 ###  https://purl.org/arlem-onto#thing
 :thing rdf:type owl:Class ;
-       rdfs:comment "The container element holds the definition of a single physical workplace object."@en .
+       rdfs:comment """The container element holds the definition of a single physical
+            workplace object."""@en .
 
 
 ###  https://purl.org/arlem-onto#trigger
 :trigger rdf:type owl:Class ;
-         rdfs:comment "The trigger is enabled after the statements on the enter stack have been evaluated, starting the execution of the stack of exit statements when released"@en .
+         rdfs:comment """The trigger is enabled after the statements on the enter stack
+            have been evaluated, starting the execution of the stack of exit statements when
+            released"""@en .
 
 
 ###  https://purl.org/arlem-onto#viewport
 :viewport rdf:type owl:Class ;
-          rdfs:comment "The visual area in which any instruction contained in the action displayed"@en .
+          rdfs:comment """The visual area in which any instruction contained in the action
+            displayed"""@en .
 
 
 ###  https://purl.org/arlem-onto#workplace
 :workplace rdf:type owl:Class ;
-           rdfs:comment "The workplace element contains all information about a physical environment in which users learn by performing tasks with real and virtual objects."@en .
+           rdfs:comment """The workplace element contains all information about a physical
+            environment in which users learn by performing tasks with real and virtual objects."""@en .
 
 
 ###  https://purl.org/arlem-onto#workplaceElement
@@ -608,8 +680,9 @@ All positions of all other detectables of type “anchor” shall be expressed r
 ###  https://purl.org/arlem-onto#obj
 :obj rdf:type owl:NamedIndividual ,
               :ModelFormat ;
-     rdfs:comment """Specify which action shall be launched on the recipient device 
-The AR training system shall publish launch ids to other devices or sensors on the MQTT topic target + “/” + id."""@en .
+     rdfs:comment """Specify which action shall be launched on the recipient device
+            The AR training system shall publish launch ids to other devices or sensors on the MQTT
+            topic target + “/” + id."""@en .
 
 
 ###  https://purl.org/arlem-onto#point
@@ -617,7 +690,8 @@ The AR training system shall publish launch ids to other devices or sensors on t
                 :predicate ;
        :hasType :animation ;
        :scale 1.0 ;
-       :url "http://example.com/point.fbx"^^xsd:anyURI ;
+       :url """
+            http://example.com/point.fbx"""^^xsd:anyURI ;
        rdfs:comment "Predicate for pointing action using animation primitive."@en .
 
 
@@ -651,7 +725,8 @@ The AR training system shall publish launch ids to other devices or sensors on t
                  :predicate ;
         :hasType :animation ;
         :scale 1.0 ;
-        :url "http://example.com/rotate.fbx"^^xsd:anyURI ;
+        :url """
+            http://example.com/rotate.fbx"""^^xsd:anyURI ;
         rdfs:comment "Predicate for rotation action using animation primitive."@en .
 
 
@@ -688,10 +763,12 @@ The AR training system shall publish launch ids to other devices or sensors on t
 :hasAugmentationType rdfs:isDefinedBy "Specify which augmentation type the id refers to."@en .
 
 
-:hasTarget rdfs:comment "Reference to unique identifier of a tangible in the workplace model."@en .
+:hasTarget rdfs:comment """Reference to unique identifier of a tangible in the workplace
+            model."""@en .
 
 
-:hasType rdfs:isDefinedBy "Specifies the category of the action and is used for styling visual appearance"@en .
+:hasType rdfs:isDefinedBy """Specifies the category of the action and is used for styling
+            visual appearance"""@en .
 
 
 :primitive rdfs:comment "Definition of a particular type of augmentation"@en .

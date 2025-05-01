@@ -1010,7 +1010,7 @@
         <rdfs:range rdf:resource="https://purl.org/arlem-onto#PrimitiveType" />
         <rdfs:comment xml:lang="en">Specifies the VR/AR primitive type of a primitive instance.</rdfs:comment>
     </owl:ObjectProperty>
-    
+
 </rdf:RDF>
 
 

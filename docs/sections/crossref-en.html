@@ -237,7 +237,7 @@ This section provides details for each class and property defined by ARLEM-Onto.
     is in domain of
    </dt>
    <dd>
-    <a href="#hasKey" title="https://purl.org/arlem-onto#hasKey">has Key</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasText" title="https://purl.org/arlem-onto#hasText">has Text</a> <sup class="type-dp" title="data property">dp</sup>
+    <a href="#hasKey" title="https://purl.org/arlem-onto#hasKey">has Key</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasLaunch" title="https://purl.org/arlem-onto#hasLaunch">has Launch</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasText" title="https://purl.org/arlem-onto#hasText">has Text</a> <sup class="type-dp" title="data property">dp</sup>
    </dd>
   </dl>
  </div>
@@ -405,6 +405,9 @@ This section provides details for each class and property defined by ARLEM-Onto.
   <li><a href="#hasDetectables" title="https://purl.org/arlem-onto#hasDetectables"> <span>has Detectables</span> </a></li>
   <li><a href="#hasDevice" title="https://purl.org/arlem-onto#hasDevice"> <span>has Device</span> </a></li>
   <li><a href="#hasDevices" title="https://purl.org/arlem-onto#hasDevices"> <span>has Devices</span> </a></li>
+  <li><a href="#hasEnter" title="https://purl.org/arlem-onto#hasEnter"> <span>has Enter</span> </a></li>
+  <li><a href="#hasExit" title="https://purl.org/arlem-onto#hasExit"> <span>has Exit</span> </a></li>
+  <li><a href="#hasLaunch" title="https://purl.org/arlem-onto#hasLaunch"> <span>has Launch</span> </a></li>
   <li><a href="#hasLocation" title="https://purl.org/arlem-onto#hasLocation"> <span>has Location</span> </a></li>
   <li><a href="#hasPersons" title="https://purl.org/arlem-onto#hasPersons"> <span>has Persons</span> </a></li>
   <li><a href="#hasPlaces" title="https://purl.org/arlem-onto#hasPlaces"> <span>has Places</span> </a></li>
@@ -428,7 +431,7 @@ This section provides details for each class and property defined by ARLEM-Onto.
   <h3>has Apps<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://purl.org/arlem-onto#hasApps</p>
   <div class="comment">
-   <span class="markdown">The apps container element holds definitions of how to interface the AR system with other apps.</span>
+   <span class="markdown">The apps container element holds definitions of how to interface the AR training system with other apps and widgets.</span>
   </div>
   <div class="description">
    <dl>
@@ -445,7 +448,7 @@ This section provides details for each class and property defined by ARLEM-Onto.
   <h3>has Augmentation<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://purl.org/arlem-onto#hasAugmentation</p>
   <div class="comment">
-   <span class="markdown">Instruct the system to display or remove an augmentation by id.</span>
+   <span class="markdown">Instruct the AR training system to play or display the augmentation with the target id provided (a predicate.id, primitive.id, or warning.id from the workplace model or an action.id from the activity model).</span>
   </div>
   <div class="description">
    <dl>
@@ -487,6 +490,9 @@ This section provides details for each class and property defined by ARLEM-Onto.
  <div class="entity" id="hasDetectables">
   <h3>has Detectables<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://purl.org/arlem-onto#hasDetectables</p>
+  <div class="comment">
+   <span class="markdown">Detectables are entities that link to fiducial markers, target feature models, or other sensor state properties providing input to the computer vision system.</span>
+  </div>
   <div class="description">
    <dl>
     <dt>
@@ -501,6 +507,14 @@ This section provides details for each class and property defined by ARLEM-Onto.
  <div class="entity" id="hasDevice">
   <h3>has Device<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://purl.org/arlem-onto#hasDevice</p>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    Specify on which device to execute the action
+   </dd>
+  </dl>
   <div class="description">
    <dl>
     <dt>
@@ -515,6 +529,9 @@ This section provides details for each class and property defined by ARLEM-Onto.
  <div class="entity" id="hasDevices">
   <h3>has Devices<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://purl.org/arlem-onto#hasDevices</p>
+  <div class="comment">
+   <span class="markdown">Devices are the AR hardware delivery systems that the AR training system may communicate with to render the learning experience for the user.</span>
+  </div>
   <div class="description">
    <dl>
     <dt>
@@ -522,6 +539,37 @@ This section provides details for each class and property defined by ARLEM-Onto.
     </dt>
     <dd>
      <a href="#workplace" title="https://purl.org/arlem-onto#workplace">workplace</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasEnter">
+  <h3>has Enter<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/arlem-onto#hasEnter</p>
+  <div class="comment">
+   <span class="markdown">Container for augmentations that will be activated or deactivated, and which messages and validation rules will be executed, once the action step is launched</span>
+  </div>
+ </div>
+ <div class="entity" id="hasExit">
+  <h3>has Exit<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/arlem-onto#hasExit</p>
+  <div class="comment">
+   <span class="markdown">Container for augmentations which will be activated or deactivated, and which messages and validation rules will be executed, once the action step is exited</span>
+  </div>
+ </div>
+ <div class="entity" id="hasLaunch">
+  <h3>has Launch<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/arlem-onto#hasLaunch</p>
+  <div class="comment">
+   <span class="markdown">Specify which action shall be launched on the recipient device The AR training system shall publish launch ids to other devices or sensors on the MQTT topic target + “/” + id.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#message" title="https://purl.org/arlem-onto#message">message</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -1679,7 +1727,7 @@ This section provides details for each class and property defined by ARLEM-Onto.
     <a href="#scale" title="https://purl.org/arlem-onto#scale">scale</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"1.0"^^<a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a> </span>
    </dd>
    <dd>
-    <a href="#url" title="https://purl.org/arlem-onto#url">url</a> <sup class="type-dp" title="data property">dp</sup> <a href="http://example.com/point.fbx" target="_blank">http://example.com/point.fbx</a>
+    <a href="#url" title="https://purl.org/arlem-onto#url">url</a> <sup class="type-dp" title="data property">dp</sup> <a href="%0A            http://example.com/point.fbx" target="_blank"> http://example.com/point.fbx</a>
    </dd>
   </dl>
  </div>
@@ -1772,7 +1820,7 @@ This section provides details for each class and property defined by ARLEM-Onto.
     <a href="#scale" title="https://purl.org/arlem-onto#scale">scale</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"1.0"^^<a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a> </span>
    </dd>
    <dd>
-    <a href="#url" title="https://purl.org/arlem-onto#url">url</a> <sup class="type-dp" title="data property">dp</sup> <a href="http://example.com/rotate.fbx" target="_blank">http://example.com/rotate.fbx</a>
+    <a href="#url" title="https://purl.org/arlem-onto#url">url</a> <sup class="type-dp" title="data property">dp</sup> <a href="%0A            http://example.com/rotate.fbx" target="_blank"> http://example.com/rotate.fbx</a>
    </dd>
   </dl>
  </div>
