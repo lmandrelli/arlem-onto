@@ -13,7 +13,7 @@
     <dc:contributor xml:lang="en">Luca Mandrelli</dc:contributor>
     <dc:description xml:lang="en">An ontology that describes the ARLEM standard.</dc:description>
     <dc:title xml:lang="en">ARLEM-Onto</dc:title>
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</owl:versionInfo>
   </owl:Ontology>
 
   <!-- Annotation properties -->

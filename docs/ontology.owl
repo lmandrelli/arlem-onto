@@ -13,7 +13,7 @@
         <dc:creator xml:lang="en">Alex Gabriel</dc:creator>
         <dc:description xml:lang="en">An ontology that describes the ARLEM standard.</dc:description>
         <dc:title xml:lang="en">ARLEM-Onto</dc:title>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -26,10 +26,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://purl.org/dc/elements/1.1/contributor -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
     
@@ -37,11 +39,13 @@
 
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/description -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
     
@@ -49,11 +53,13 @@
 
     <!-- http://purl.org/dc/elements/1.1/publisher -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/title -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
@@ -67,10 +73,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://purl.org/arlem-onto#hasApps -->
+
 
     <owl:ObjectProperty rdf:about="https://purl.org/arlem-onto#hasApps">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#workplace"/>
@@ -80,6 +88,7 @@
 
 
     <!-- https://purl.org/arlem-onto#hasAugmentation -->
+
 
     <owl:ObjectProperty rdf:about="https://purl.org/arlem-onto#hasAugmentation">
         <rdfs:domain>
@@ -97,6 +106,7 @@
 
     <!-- https://purl.org/arlem-onto#hasAugmentationType -->
 
+
     <owl:ObjectProperty rdf:about="https://purl.org/arlem-onto#hasAugmentationType">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#activate"/>
         <rdfs:range rdf:resource="https://purl.org/arlem-onto#augmentationType"/>
@@ -106,6 +116,7 @@
 
     <!-- https://purl.org/arlem-onto#hasDetectables -->
 
+
     <owl:ObjectProperty rdf:about="https://purl.org/arlem-onto#hasDetectables">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#workplace"/>
     </owl:ObjectProperty>
@@ -113,6 +124,7 @@
 
 
     <!-- https://purl.org/arlem-onto#hasDevice -->
+
 
     <owl:ObjectProperty rdf:about="https://purl.org/arlem-onto#hasDevice">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#action"/>
@@ -122,6 +134,7 @@
 
     <!-- https://purl.org/arlem-onto#hasDevices -->
 
+
     <owl:ObjectProperty rdf:about="https://purl.org/arlem-onto#hasDevices">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#workplace"/>
     </owl:ObjectProperty>
@@ -129,6 +142,7 @@
 
 
     <!-- https://purl.org/arlem-onto#hasLocation -->
+
 
     <owl:ObjectProperty rdf:about="https://purl.org/arlem-onto#hasLocation">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#action"/>
@@ -139,6 +153,7 @@
 
     <!-- https://purl.org/arlem-onto#hasPersons -->
 
+
     <owl:ObjectProperty rdf:about="https://purl.org/arlem-onto#hasPersons">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#workplace"/>
         <rdfs:comment xml:lang="en">Persons refer to the people in the workplace with whom the user may interact</rdfs:comment>
@@ -148,6 +163,7 @@
 
     <!-- https://purl.org/arlem-onto#hasPlaces -->
 
+
     <owl:ObjectProperty rdf:about="https://purl.org/arlem-onto#hasPlaces">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#workplace"/>
         <rdfs:comment xml:lang="en">Places are tangibles. They refer to locations within the workplace.</rdfs:comment>
@@ -156,6 +172,7 @@
 
 
     <!-- https://purl.org/arlem-onto#hasPoi -->
+
 
     <owl:ObjectProperty rdf:about="https://purl.org/arlem-onto#hasPoi">
         <rdfs:domain>
@@ -173,6 +190,7 @@
 
     <!-- https://purl.org/arlem-onto#hasPredicate -->
 
+
     <owl:ObjectProperty rdf:about="https://purl.org/arlem-onto#hasPredicate">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#action"/>
         <rdfs:comment xml:lang="en">The action may specify what verb to log user interaction with via the xAPI.
@@ -184,6 +202,7 @@ If xAPI is supported by the AR training system, then any predicate id used shall
 
     <!-- https://purl.org/arlem-onto#hasPredicates -->
 
+
     <owl:ObjectProperty rdf:about="https://purl.org/arlem-onto#hasPredicates">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#workplace"/>
         <rdfs:comment xml:lang="en">Predicates are reusable instructional augmentations, configuring a specific augmentation primitive for its use in activities.</rdfs:comment>
@@ -192,6 +211,7 @@ If xAPI is supported by the AR training system, then any predicate id used shall
 
 
     <!-- https://purl.org/arlem-onto#hasPrimitives -->
+
 
     <owl:ObjectProperty rdf:about="https://purl.org/arlem-onto#hasPrimitives">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#workplace"/>
@@ -203,6 +223,7 @@ NOTE—The workplace model informs the AR training system, which of the primitiv
 
     <!-- https://purl.org/arlem-onto#hasSensors -->
 
+
     <owl:ObjectProperty rdf:about="https://purl.org/arlem-onto#hasSensors">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#workplace"/>
         <rdfs:comment xml:lang="en">Sensors are hardware devices that detect or measure physical characteristics and communicates the data generated digitally.</rdfs:comment>
@@ -211,6 +232,7 @@ NOTE—The workplace model informs the AR training system, which of the primitiv
 
 
     <!-- https://purl.org/arlem-onto#hasTarget -->
+
 
     <owl:ObjectProperty rdf:about="https://purl.org/arlem-onto#hasTarget">
         <rdfs:domain>
@@ -227,6 +249,7 @@ NOTE—The workplace model informs the AR training system, which of the primitiv
 
     <!-- https://purl.org/arlem-onto#hasThings -->
 
+
     <owl:ObjectProperty rdf:about="https://purl.org/arlem-onto#hasThings">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#workplace"/>
         <rdfs:comment xml:lang="en">The container object holds an array of definitions of the physical workplace objects such as tools, machines, furniture, or materials</rdfs:comment>
@@ -235,6 +258,7 @@ NOTE—The workplace model informs the AR training system, which of the primitiv
 
 
     <!-- https://purl.org/arlem-onto#hasTransform -->
+
 
     <owl:ObjectProperty rdf:about="https://purl.org/arlem-onto#hasTransform">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#primitive"/>
@@ -245,6 +269,7 @@ NOTE—The workplace model informs the AR training system, which of the primitiv
 
     <!-- https://purl.org/arlem-onto#hasTrigger -->
 
+
     <owl:ObjectProperty rdf:about="https://purl.org/arlem-onto#hasTrigger">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#if"/>
     </owl:ObjectProperty>
@@ -253,6 +278,7 @@ NOTE—The workplace model informs the AR training system, which of the primitiv
 
     <!-- https://purl.org/arlem-onto#hasType -->
 
+
     <owl:ObjectProperty rdf:about="https://purl.org/arlem-onto#hasType">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#action"/>
     </owl:ObjectProperty>
@@ -260,6 +286,7 @@ NOTE—The workplace model informs the AR training system, which of the primitiv
 
 
     <!-- https://purl.org/arlem-onto#hasViewport -->
+
 
     <owl:ObjectProperty rdf:about="https://purl.org/arlem-onto#hasViewport">
         <rdfs:domain>
@@ -279,6 +306,7 @@ NOTE—The workplace model informs the AR training system, which of the primitiv
 
     <!-- https://purl.org/arlem-onto#hasWarnings -->
 
+
     <owl:ObjectProperty rdf:about="https://purl.org/arlem-onto#hasWarnings">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#workplace"/>
         <rdfs:comment xml:lang="en">Definition of the supported warnings and instructions
@@ -289,6 +317,7 @@ NOTE—The AR system shall support all warnings listed in ISO 7010.</rdfs:commen
 
     <!-- https://purl.org/arlem-onto#hasWorkplace -->
 
+
     <owl:ObjectProperty rdf:about="https://purl.org/arlem-onto#hasWorkplace">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#activity"/>
     </owl:ObjectProperty>
@@ -296,6 +325,7 @@ NOTE—The AR system shall support all warnings listed in ISO 7010.</rdfs:commen
 
 
     <!-- https://purl.org/arlem-onto#primitiveType -->
+
 
     <owl:ObjectProperty rdf:about="https://purl.org/arlem-onto#primitiveType">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#primitive"/>
@@ -306,6 +336,7 @@ NOTE—The AR system shall support all warnings listed in ISO 7010.</rdfs:commen
 
 
     <!-- https://purl.org/arlem-onto#startWith -->
+
 
     <owl:ObjectProperty rdf:about="https://purl.org/arlem-onto#startWith">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#activity"/>
@@ -323,10 +354,12 @@ NOTE—The AR system shall support all warnings listed in ISO 7010.</rdfs:commen
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://purl.org/arlem-onto#color -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#color">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#primitive"/>
@@ -336,6 +369,7 @@ NOTE—The AR system shall support all warnings listed in ISO 7010.</rdfs:commen
 
 
     <!-- https://purl.org/arlem-onto#fileFormat -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#fileFormat">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#Model3D"/>
@@ -347,11 +381,13 @@ NOTE—The AR system shall support all warnings listed in ISO 7010.</rdfs:commen
 
     <!-- https://purl.org/arlem-onto#hasAugmentationType -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#hasAugmentationType"/>
     
 
 
     <!-- https://purl.org/arlem-onto#hasDescription -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#hasDescription">
         <rdfs:domain>
@@ -369,6 +405,7 @@ NOTE—The AR system shall support all warnings listed in ISO 7010.</rdfs:commen
 
     <!-- https://purl.org/arlem-onto#hasInstructionDescription -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#hasInstructionDescription">
         <rdfs:isDefinedBy xml:lang="en">More detailed instruction</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
@@ -376,6 +413,7 @@ NOTE—The AR system shall support all warnings listed in ISO 7010.</rdfs:commen
 
 
     <!-- https://purl.org/arlem-onto#hasKey -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#hasKey">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#message"/>
@@ -386,6 +424,7 @@ NOTE—The AR system shall support all warnings listed in ISO 7010.</rdfs:commen
 
     <!-- https://purl.org/arlem-onto#hasLanguage -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#hasLanguage">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#activity"/>
         <rdfs:isDefinedBy xml:lang="en">Specifies the language with which the activity expresses human-readable instructional prompts.</rdfs:isDefinedBy>
@@ -394,6 +433,7 @@ NOTE—The AR system shall support all warnings listed in ISO 7010.</rdfs:commen
 
 
     <!-- https://purl.org/arlem-onto#hasName -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#hasName">
         <rdfs:domain>
@@ -411,6 +451,7 @@ NOTE—The AR system shall support all warnings listed in ISO 7010.</rdfs:commen
 
     <!-- https://purl.org/arlem-onto#hasOrigin -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#hasOrigin">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#workplace"/>
         <rdfs:comment xml:lang="en">The id of a detectable that marks the world origin for the work place
@@ -421,11 +462,13 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#hasTarget -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#hasTarget"/>
     
 
 
     <!-- https://purl.org/arlem-onto#hasText -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#hasText">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#message"/>
@@ -436,6 +479,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#hasTitle -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#hasTitle">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#instruction"/>
         <rdfs:isDefinedBy xml:lang="en">the headline of the instruction</rdfs:isDefinedBy>
@@ -445,11 +489,13 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#hasType -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#hasType"/>
     
 
 
     <!-- https://purl.org/arlem-onto#hasUID -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#hasUID">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#workplace"/>
@@ -458,6 +504,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
 
     <!-- https://purl.org/arlem-onto#positionX -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#positionX">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#Transform"/>
@@ -468,6 +515,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#positionY -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#positionY">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#Transform"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
@@ -477,6 +525,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#positionZ -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#positionZ">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#Transform"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
@@ -485,6 +534,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
 
     <!-- https://purl.org/arlem-onto#removeSelf -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#removeSelf">
         <rdfs:domain>
@@ -503,6 +553,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#rotationX -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#rotationX">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#Transform"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
@@ -511,6 +562,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
 
     <!-- https://purl.org/arlem-onto#rotationY -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#rotationY">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#Transform"/>
@@ -521,6 +573,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#rotationZ -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#rotationZ">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#Transform"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
@@ -529,6 +582,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
 
     <!-- https://purl.org/arlem-onto#scale -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#scale">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#predicate"/>
@@ -540,6 +594,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#scaleX -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#scaleX">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#Transform"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
@@ -548,6 +603,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
 
     <!-- https://purl.org/arlem-onto#scaleY -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#scaleY">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#Transform"/>
@@ -558,6 +614,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#scaleZ -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#scaleZ">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#Transform"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
@@ -566,6 +623,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
 
     <!-- https://purl.org/arlem-onto#url -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#url">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#primitive"/>
@@ -577,6 +635,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#volume -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#volume">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#primitive"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
@@ -586,6 +645,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
 
     <!-- https://purl.org/arlem-onto#xSize -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#xSize">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#primitive"/>
@@ -597,6 +657,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#ySize -->
 
+
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#ySize">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#primitive"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
@@ -606,6 +667,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
 
     <!-- https://purl.org/arlem-onto#zSize -->
+
 
     <owl:DatatypeProperty rdf:about="https://purl.org/arlem-onto#zSize">
         <rdfs:domain rdf:resource="https://purl.org/arlem-onto#primitive"/>
@@ -623,10 +685,12 @@ All positions of all other detectables of type “anchor” shall be expressed r
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://purl.org/arlem-onto#Model3D -->
+
 
     <owl:Class rdf:about="https://purl.org/arlem-onto#Model3D">
         <rdfs:subClassOf rdf:resource="https://purl.org/arlem-onto#primitive"/>
@@ -637,11 +701,13 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#ModelFormat -->
 
+
     <owl:Class rdf:about="https://purl.org/arlem-onto#ModelFormat"/>
     
 
 
     <!-- https://purl.org/arlem-onto#PrimitiveType -->
+
 
     <owl:Class rdf:about="https://purl.org/arlem-onto#PrimitiveType">
         <rdfs:comment xml:lang="en">Supported primitive types for VR and AR (cube, sphere, etc.)</rdfs:comment>
@@ -651,6 +717,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#Transform -->
 
+
     <owl:Class rdf:about="https://purl.org/arlem-onto#Transform">
         <rdfs:comment xml:lang="en">Standard 3D transform with position, rotation, and scale</rdfs:comment>
     </owl:Class>
@@ -658,6 +725,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
 
     <!-- https://purl.org/arlem-onto#action -->
+
 
     <owl:Class rdf:about="https://purl.org/arlem-onto#action">
         <rdfs:isDefinedBy xml:lang="en">Action elements describe the steps of the learning activity.</rdfs:isDefinedBy>
@@ -667,6 +735,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#activate -->
 
+
     <owl:Class rdf:about="https://purl.org/arlem-onto#activate">
         <rdfs:isDefinedBy xml:lang="en">Statement to execute effector output: load and display an augmentation to the user</rdfs:isDefinedBy>
     </owl:Class>
@@ -674,6 +743,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
 
     <!-- https://purl.org/arlem-onto#activity -->
+
 
     <owl:Class rdf:about="https://purl.org/arlem-onto#activity">
         <rdfs:isDefinedBy xml:lang="en">The activity contains a sequence of action steps, leading the user through the workflow needed to develop and demonstrate competence in the intended learning outcome.</rdfs:isDefinedBy>
@@ -683,6 +753,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#app -->
 
+
     <owl:Class rdf:about="https://purl.org/arlem-onto#app">
         <rdfs:comment xml:lang="en">Widget or app</rdfs:comment>
     </owl:Class>
@@ -690,6 +761,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
 
     <!-- https://purl.org/arlem-onto#augmentationType -->
+
 
     <owl:Class rdf:about="https://purl.org/arlem-onto#augmentationType">
         <rdfs:comment xml:lang="en">augmentation type</rdfs:comment>
@@ -699,6 +771,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#deactivate -->
 
+
     <owl:Class rdf:about="https://purl.org/arlem-onto#deactivate">
         <rdfs:comment xml:lang="en">Statement to remove augmentations</rdfs:comment>
     </owl:Class>
@@ -706,6 +779,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
 
     <!-- https://purl.org/arlem-onto#detectable -->
+
 
     <owl:Class rdf:about="https://purl.org/arlem-onto#detectable">
         <rdfs:comment xml:lang="en">A detectable instructs the system how to recognize tangibles (things, places, or people).</rdfs:comment>
@@ -715,6 +789,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#device -->
 
+
     <owl:Class rdf:about="https://purl.org/arlem-onto#device">
         <rdfs:comment xml:lang="en">The hardware device that may be used to deliver activities or parts of activities created in this workplace.</rdfs:comment>
     </owl:Class>
@@ -722,6 +797,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
 
     <!-- https://purl.org/arlem-onto#enter -->
+
 
     <owl:Class rdf:about="https://purl.org/arlem-onto#enter">
         <rdfs:isDefinedBy xml:lang="en">Container for augmentations that will be activated or deactivated, and which messages and validation rules will be executed, once the action step is launched</rdfs:isDefinedBy>
@@ -731,6 +807,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#exit -->
 
+
     <owl:Class rdf:about="https://purl.org/arlem-onto#exit">
         <rdfs:isDefinedBy xml:lang="en">Container for augmentations which will be activated or deactivated, and which messages and validation rules will be executed, once the action step is exited</rdfs:isDefinedBy>
     </owl:Class>
@@ -738,6 +815,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
 
     <!-- https://purl.org/arlem-onto#if -->
+
 
     <owl:Class rdf:about="https://purl.org/arlem-onto#if">
         <rdfs:comment xml:lang="en">Specify a rule for validating user behavior and other characteristics with defined queries to determine branching of the flow of action</rdfs:comment>
@@ -747,6 +825,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#instruction -->
 
+
     <owl:Class rdf:about="https://purl.org/arlem-onto#instruction">
         <rdfs:comment xml:lang="en">Human-readable directives and prompts for the learner for this particular action step</rdfs:comment>
     </owl:Class>
@@ -754,6 +833,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
 
     <!-- https://purl.org/arlem-onto#message -->
+
 
     <owl:Class rdf:about="https://purl.org/arlem-onto#message">
         <rdfs:isDefinedBy xml:lang="en">Specify message statements to allow sending control commands and communication from device to device and user to user</rdfs:isDefinedBy>
@@ -763,6 +843,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#person -->
 
+
     <owl:Class rdf:about="https://purl.org/arlem-onto#person">
         <rdfs:comment xml:lang="en">A particular individual</rdfs:comment>
     </owl:Class>
@@ -770,6 +851,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
 
     <!-- https://purl.org/arlem-onto#place -->
+
 
     <owl:Class rdf:about="https://purl.org/arlem-onto#place">
         <rdfs:comment xml:lang="en">A specific location in the workplace.</rdfs:comment>
@@ -779,6 +861,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#predicate -->
 
+
     <owl:Class rdf:about="https://purl.org/arlem-onto#predicate">
         <rdfs:comment xml:lang="en">Reusable predicate defining an instructional augmentation.</rdfs:comment>
     </owl:Class>
@@ -787,11 +870,13 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#primitive -->
 
+
     <owl:Class rdf:about="https://purl.org/arlem-onto#primitive"/>
     
 
 
     <!-- https://purl.org/arlem-onto#sensor -->
+
 
     <owl:Class rdf:about="https://purl.org/arlem-onto#sensor">
         <rdfs:comment xml:lang="en">For each sensor, the workplace model describes how to connect and what data streams to subscribe to.</rdfs:comment>
@@ -801,6 +886,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#thing -->
 
+
     <owl:Class rdf:about="https://purl.org/arlem-onto#thing">
         <rdfs:comment xml:lang="en">The container element holds the definition of a single physical workplace object.</rdfs:comment>
     </owl:Class>
@@ -808,6 +894,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
 
     <!-- https://purl.org/arlem-onto#trigger -->
+
 
     <owl:Class rdf:about="https://purl.org/arlem-onto#trigger">
         <rdfs:comment xml:lang="en">The trigger is enabled after the statements on the enter stack have been evaluated, starting the execution of the stack of exit statements when released</rdfs:comment>
@@ -817,6 +904,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#viewport -->
 
+
     <owl:Class rdf:about="https://purl.org/arlem-onto#viewport">
         <rdfs:comment xml:lang="en">The visual area in which any instruction contained in the action displayed</rdfs:comment>
     </owl:Class>
@@ -825,6 +913,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#workplace -->
 
+
     <owl:Class rdf:about="https://purl.org/arlem-onto#workplace">
         <rdfs:comment xml:lang="en">The workplace element contains all information about a physical environment in which users learn by performing tasks with real and virtual objects.</rdfs:comment>
     </owl:Class>
@@ -832,6 +921,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
 
     <!-- https://purl.org/arlem-onto#workplaceElement -->
+
 
     <owl:Class rdf:about="https://purl.org/arlem-onto#workplaceElement"/>
     
@@ -845,10 +935,12 @@ All positions of all other detectables of type “anchor” shall be expressed r
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- https://purl.org/arlem-onto#actionAugmentation -->
+
 
     <owl:NamedIndividual rdf:about="https://purl.org/arlem-onto#actionAugmentation">
         <rdf:type rdf:resource="https://purl.org/arlem-onto#augmentationType"/>
@@ -858,6 +950,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#actionType -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.org/arlem-onto#actionType">
         <rdf:type rdf:resource="https://purl.org/arlem-onto#workplaceElement"/>
     </owl:NamedIndividual>
@@ -866,6 +959,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#actions -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.org/arlem-onto#actions">
         <rdf:type rdf:resource="https://purl.org/arlem-onto#viewport"/>
     </owl:NamedIndividual>
@@ -873,6 +967,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
 
     <!-- https://purl.org/arlem-onto#animation -->
+
 
     <owl:NamedIndividual rdf:about="https://purl.org/arlem-onto#animation">
         <rdf:type rdf:resource="https://purl.org/arlem-onto#primitive"/>
@@ -883,6 +978,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#audio -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.org/arlem-onto#audio">
         <rdf:type rdf:resource="https://purl.org/arlem-onto#primitive"/>
         <rdfs:comment xml:lang="en">Audio primitive for sound output.</rdfs:comment>
@@ -892,6 +988,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#cone -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.org/arlem-onto#cone">
         <rdf:type rdf:resource="https://purl.org/arlem-onto#PrimitiveType"/>
     </owl:NamedIndividual>
@@ -900,6 +997,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#cube -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.org/arlem-onto#cube">
         <rdf:type rdf:resource="https://purl.org/arlem-onto#PrimitiveType"/>
     </owl:NamedIndividual>
@@ -907,6 +1005,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
 
     <!-- https://purl.org/arlem-onto#custom -->
+
 
     <owl:NamedIndividual rdf:about="https://purl.org/arlem-onto#custom">
         <rdf:type rdf:resource="https://purl.org/arlem-onto#PrimitiveType"/>
@@ -917,6 +1016,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#cylinder -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.org/arlem-onto#cylinder">
         <rdf:type rdf:resource="https://purl.org/arlem-onto#PrimitiveType"/>
     </owl:NamedIndividual>
@@ -925,6 +1025,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#glb -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.org/arlem-onto#glb">
         <rdf:type rdf:resource="https://purl.org/arlem-onto#ModelFormat"/>
     </owl:NamedIndividual>
@@ -932,6 +1033,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
 
     <!-- https://purl.org/arlem-onto#image -->
+
 
     <owl:NamedIndividual rdf:about="https://purl.org/arlem-onto#image">
         <rdf:type rdf:resource="https://purl.org/arlem-onto#primitive"/>
@@ -942,6 +1044,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
     <!-- https://purl.org/arlem-onto#label -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.org/arlem-onto#label">
         <rdf:type rdf:resource="https://purl.org/arlem-onto#primitive"/>
         <rdfs:comment xml:lang="en">Label primitive for text annotations.</rdfs:comment>
@@ -950,6 +1053,7 @@ All positions of all other detectables of type “anchor” shall be expressed r
 
 
     <!-- https://purl.org/arlem-onto#obj -->
+
 
     <owl:NamedIndividual rdf:about="https://purl.org/arlem-onto#obj">
         <rdf:type rdf:resource="https://purl.org/arlem-onto#ModelFormat"/>
@@ -960,6 +1064,7 @@ The AR training system shall publish launch ids to other devices or sensors on t
 
 
     <!-- https://purl.org/arlem-onto#point -->
+
 
     <owl:NamedIndividual rdf:about="https://purl.org/arlem-onto#point">
         <rdf:type rdf:resource="https://purl.org/arlem-onto#predicate"/>
@@ -973,6 +1078,7 @@ The AR training system shall publish launch ids to other devices or sensors on t
 
     <!-- https://purl.org/arlem-onto#predicateAugmentation -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.org/arlem-onto#predicateAugmentation">
         <rdf:type rdf:resource="https://purl.org/arlem-onto#augmentationType"/>
     </owl:NamedIndividual>
@@ -980,6 +1086,7 @@ The AR training system shall publish launch ids to other devices or sensors on t
 
 
     <!-- https://purl.org/arlem-onto#predicateType -->
+
 
     <owl:NamedIndividual rdf:about="https://purl.org/arlem-onto#predicateType">
         <rdf:type rdf:resource="https://purl.org/arlem-onto#workplaceElement"/>
@@ -989,6 +1096,7 @@ The AR training system shall publish launch ids to other devices or sensors on t
 
     <!-- https://purl.org/arlem-onto#primitive -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.org/arlem-onto#primitive">
         <rdf:type rdf:resource="https://purl.org/arlem-onto#workplaceElement"/>
     </owl:NamedIndividual>
@@ -996,6 +1104,7 @@ The AR training system shall publish launch ids to other devices or sensors on t
 
 
     <!-- https://purl.org/arlem-onto#primitiveAugmentation -->
+
 
     <owl:NamedIndividual rdf:about="https://purl.org/arlem-onto#primitiveAugmentation">
         <rdf:type rdf:resource="https://purl.org/arlem-onto#augmentationType"/>
@@ -1005,6 +1114,7 @@ The AR training system shall publish launch ids to other devices or sensors on t
 
     <!-- https://purl.org/arlem-onto#reactions -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.org/arlem-onto#reactions">
         <rdf:type rdf:resource="https://purl.org/arlem-onto#viewport"/>
     </owl:NamedIndividual>
@@ -1012,6 +1122,7 @@ The AR training system shall publish launch ids to other devices or sensors on t
 
 
     <!-- https://purl.org/arlem-onto#rotate -->
+
 
     <owl:NamedIndividual rdf:about="https://purl.org/arlem-onto#rotate">
         <rdf:type rdf:resource="https://purl.org/arlem-onto#predicate"/>
@@ -1025,6 +1136,7 @@ The AR training system shall publish launch ids to other devices or sensors on t
 
     <!-- https://purl.org/arlem-onto#sphere -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.org/arlem-onto#sphere">
         <rdf:type rdf:resource="https://purl.org/arlem-onto#PrimitiveType"/>
     </owl:NamedIndividual>
@@ -1032,6 +1144,7 @@ The AR training system shall publish launch ids to other devices or sensors on t
 
 
     <!-- https://purl.org/arlem-onto#video -->
+
 
     <owl:NamedIndividual rdf:about="https://purl.org/arlem-onto#video">
         <rdf:type rdf:resource="https://purl.org/arlem-onto#primitive"/>
@@ -1042,6 +1155,7 @@ The AR training system shall publish launch ids to other devices or sensors on t
 
     <!-- https://purl.org/arlem-onto#warning -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.org/arlem-onto#warning">
         <rdf:type rdf:resource="https://purl.org/arlem-onto#workplaceElement"/>
     </owl:NamedIndividual>
@@ -1050,6 +1164,7 @@ The AR training system shall publish launch ids to other devices or sensors on t
 
     <!-- https://purl.org/arlem-onto#warningAugmentation -->
 
+
     <owl:NamedIndividual rdf:about="https://purl.org/arlem-onto#warningAugmentation">
         <rdf:type rdf:resource="https://purl.org/arlem-onto#augmentationType"/>
     </owl:NamedIndividual>
@@ -1057,6 +1172,7 @@ The AR training system shall publish launch ids to other devices or sensors on t
 
 
     <!-- https://purl.org/arlem-onto#warnings -->
+
 
     <owl:NamedIndividual rdf:about="https://purl.org/arlem-onto#warnings">
         <rdf:type rdf:resource="https://purl.org/arlem-onto#viewport"/>
@@ -1071,6 +1187,7 @@ The AR training system shall publish launch ids to other devices or sensors on t
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
+
 
     <rdf:Description rdf:about="https://purl.org/arlem-onto#hasAugmentationType">
         <rdfs:isDefinedBy xml:lang="en">Specify which augmentation type the id refers to.</rdfs:isDefinedBy>
@@ -1088,5 +1205,6 @@ The AR training system shall publish launch ids to other devices or sensors on t
 
 
 
-<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
 
